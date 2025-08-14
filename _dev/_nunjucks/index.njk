@@ -1,0 +1,462 @@
+{%- set pageCategory = "cat-home" -%}
+{%- set cssFile = "home_2019.css" -%}
+{%- set jsFile = "home_2019.js" -%}
+{%- set cssTimeStamp = "?v=20201012" -%}
+{%- set jsTimeStamp = "?v=20201012" -%}
+{%- set pageTitle = config.sitename -%}
+{# {%- set pageTitle = "TOP" -%} #}
+{%- set pageDescription = "エイジレスな生き方を応援するINFINITY(インフィニティ)公式ブランドサイト。“この肌は、幸せの証し” 確かな手応えのあるアイテムで、肌に眠る無限の可能性を引き出し、もっと輝く肌へと導く総合ブランド" -%}
+{%- set isOG = "true" -%}
+{%- extends "_layout/_base.njk" -%}
+{%- block option_head %}
+<script type="application/ld+json">
+{
+    "@context":"http://schema.org",
+    "@type":"website",
+    "name":"INFINITY KOSE",
+    "inLanguage":"jp",
+    "publisher": {
+    "@type": "Organization",
+    "name": "KOSE",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.kose.co.jp/infinity/resources/images/header_2019/logo_scroll.png"
+    }},
+    "copyrightYear":"2014",
+"headline":"呼び覚ます、無限の美しさ。INFINITY インフィニティ | コーセー[公式]",
+    "description":"呼び覚ます、無限の美しさ。INFINITY インフィニティスペシャルサイト。“この肌は、幸せの証し” 確かな手応えのあるアイテムで、肌に眠る無限の可能性を引き出し、もっと輝く肌へと導く総合ブランド",
+"url":"https://www.kose.co.jp/infinity/"
+}
+</script>
+{% endblock -%}
+{%- block content_main -%}
+
+  <div class="main-wrap">
+    {% include "_page/_home/_mv.njk" %}
+		<div class="top-emergency">
+			<div class="top-emergency__btn">
+				<a class="top-emergency__btn_link" href="https://maison.kose.co.jp/site/t/t2074/" target="_blank">10月1日　価格改定のお知らせ</a>
+			</div>
+		</div>
+		<section class="top-carousel">
+				<h2 class="category-title category-title-topics">トピックス</h2>
+				
+				<button class="top-carousel__ui top-carousel__arrow top-carousel__arrow--left">
+					<img class="w-100" src="/infinity/resources/images/home_2019/carousel/ui_left.png" alt="">
+				</button>
+				<button class="top-carousel__ui top-carousel__arrow top-carousel__arrow--right">
+					<img class="w-100" src="/infinity/resources/images/home_2019/carousel/ui_right.png" alt="">
+				</button>
+				<div class="top-carousel__box">
+					<ul class="top-carousel__ul h-4em">
+						<li class="top-carousel__li">
+							<a href="/infinity/topics/#20220821-new">
+								<div class="top-carousel__frame">
+									<div class="top-carousel__ph">
+										<img class="w-100" src="/infinity/resources/images/home_2019/carousel/product_20220731_01.png" alt="">
+									</div>
+									<div class="top-carousel__col">
+										<p class="top-carousel__day">2022年8月21日発売 新商品</p>
+										<p class="top-carousel__name">インフィニティ<br>アンリミテッドキー</p>
+									</div>
+									<div class="top-carousel__detail">
+										<button>詳しくはこちら</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="top-carousel__li">
+							<a href="/infinity/topics/#20220216-limited">
+								<div class="top-carousel__frame">
+									<div class="top-carousel__ph">
+										<img class="w-100" src="/infinity/resources/images/home_2019/carousel/product_20220731_02.png" alt="">
+									</div>
+									<div class="top-carousel__col">
+										<p class="top-carousel__day">2022年2月16日発売 限定品</p>
+										<p class="top-carousel__name">インフィニティ<br>アドバンスト ホワイト ＸＸ<br>ダブルエクスペリエンス キット</p>
+									</div>
+									<div class="top-carousel__detail">
+										<button>詳しくはこちら</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="top-carousel__li">
+							<a href="/infinity/topics/#20220116-new-a">
+								<div class="top-carousel__frame">
+									<div class="top-carousel__ph">
+										<img class="w-100" src="/infinity/resources/images/home_2019/carousel/product_20220731_03.png" alt="">
+									</div>
+									<div class="top-carousel__col">
+										<p class="top-carousel__day">2022年1月16日発売 新商品</p>
+										<p class="top-carousel__name">インフィニティ<br>プレステジアス<br>デュアル クリーム</p>
+									</div>
+									<div class="top-carousel__detail">
+										<button>詳しくはこちら</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="top-carousel__li">
+							<a href="/infinity/topics/#20220116-new-b">
+								<div class="top-carousel__frame">
+									<div class="top-carousel__ph">
+										<img class="w-100" src="/infinity/resources/images/home_2019/carousel/product_20220731_04.png" alt="">
+									</div>
+									<div class="top-carousel__col">
+										<p class="top-carousel__day">2022年1月16日発売 新商品</p>
+										<p class="top-carousel__name">インフィニティ<br>プレステジアス<br>アイゾーン セラム</p>
+									</div>
+									<div class="top-carousel__detail">
+										<button>詳しくはこちら</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="top-carousel__li">
+							<a href="/infinity/topics/#20211116-limited-a">
+								<div class="top-carousel__frame">
+									<div class="top-carousel__ph">
+										<img class="w-100" src="/infinity/resources/images/home_2019/carousel/product_20220731_05.png" alt="">
+									</div>
+									<div class="top-carousel__col">
+										<p class="top-carousel__day">2021年11月16日発売 限定品</p>
+										<p class="top-carousel__name">インフィニティ プレステジアス<br>セラム インダルジェンス<br>ラグジュリアス コレクション</p>
+									</div>
+									<div class="top-carousel__detail">
+										<button>詳しくはこちら</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="top-carousel__li">
+							<a href="/infinity/topics/#20211116-limited-b">
+								<div class="top-carousel__frame">
+									<div class="top-carousel__ph">
+										<img class="w-100" src="/infinity/resources/images/home_2019/carousel/product_20220731_06.png" alt="">
+									</div>
+									<div class="top-carousel__col">
+										<p class="top-carousel__day">2021年11月16日発売 限定品</p>
+										<p class="top-carousel__name">インフィニティ<br>プレステジアス<br>ラグジュリアスコレクション Ｃ</p>
+									</div>
+									<div class="top-carousel__detail">
+										<button>詳しくはこちら</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="top-carousel__li">
+							<a href="/infinity/topics/#20211116-limited-c">
+								<div class="top-carousel__frame">
+									<div class="top-carousel__ph">
+										<img class="w-100" src="/infinity/resources/images/home_2019/carousel/product_20220731_07.png" alt="">
+									</div>
+									<div class="top-carousel__col">
+										<p class="top-carousel__day">2021年11月16日発売 限定品</p>
+										<p class="top-carousel__name">インフィニティ<br>ロイヤルフラワーコレクション X<br>コンパクトパウダー</p>
+									</div>
+									<div class="top-carousel__detail">
+										<button>詳しくはこちら</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="top-carousel__li">
+							<a href="/infinity/topics/#20211016-limited">
+								<div class="top-carousel__frame">
+									<div class="top-carousel__ph">
+										<img class="w-100" src="/infinity/resources/images/home_2019/carousel/product_20220731_08.png" alt="">
+									</div>
+									<div class="top-carousel__col">
+										<p class="top-carousel__day">2021年10月16日発売 限定品</p>
+										<p class="top-carousel__name">インフィニティ インテンシブ リンクル<br>ダブル エクスペリエンス キット</p>
+									</div>
+									<div class="top-carousel__detail">
+										<button>詳しくはこちら</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="top-carousel__li">
+							<a href="/infinity/topics/#20210821-limited">
+								<div class="top-carousel__frame">
+									<div class="top-carousel__ph">
+										<img class="w-100" src="/infinity/resources/images/home_2019/carousel/product_20220731_09.png" alt="">
+									</div>
+									<div class="top-carousel__col">
+										<p class="top-carousel__day">2021年8月21日発売 限定品</p>
+										<p class="top-carousel__name">インフィニティ<br>アドバンスト モイスチュア<br>コンセントレート<br>ダブル エクスペリエンス キット</p>
+									</div>
+									<div class="top-carousel__detail">
+										<button>詳しくはこちら</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="top-carousel__li">
+							<a href="/infinity/topics/#20210821-new-a">
+								<div class="top-carousel__frame">
+									<div class="top-carousel__ph">
+										<img class="w-100" src="/infinity/resources/images/home_2019/carousel/product_20220731_10.png" alt="">
+									</div>
+									<div class="top-carousel__col">
+										<p class="top-carousel__day">2021年8月21日発売 限定品</p>
+										<p class="top-carousel__name">インフィニティ<br>スキン インテグレーション オイル</p>
+									</div>
+									<div class="top-carousel__detail">
+										<button>詳しくはこちら</button>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="top-carousel__li">
+							<a href="/infinity/topics/#20210821-new-b">
+								<div class="top-carousel__frame">
+									<div class="top-carousel__ph">
+										<img class="w-100" src="/infinity/resources/images/home_2019/carousel/product_20220731_11.png" alt="">
+									</div>
+									<div class="top-carousel__col">
+										<p class="top-carousel__day">2021年8月21日発売 限定品</p>
+										<p class="top-carousel__name">スキン インテグレーション<br>オイル マスク</p>
+									</div>
+									<div class="top-carousel__detail">
+										<button>詳しくはこちら</button>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="main-contents harf-bnr teiki">
+				<h2 class="category-title category-title_mincho">INFINITYの定期便</h2>
+				<div class="contents-box">
+					<div class="harf">
+						<div class="harf-box hover-alpha">
+							<a href="https://www.kose.co.jp/infinity/teiki_unlimited_key/">
+								<img class="w-100" src="/infinity/resources/images/home_2019/bnr/banner_a.jpg" alt="インフィニティ アンリミテッド キー キット 定期購入コース INFINITY KOSÉ">
+							</a>
+						</div>
+						<div class="harf-box hover-alpha">
+							<a href="https://www.kose.co.jp/infinity/teiki_innovative_bright_serum/">
+								<img class="w-100" src="/infinity/resources/images/home_2019/bnr/banner_b.jpg" alt="インフィニティ イノベイティブ ブライト セラム  XX キット INFINITY KOSÉ">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="bnr-long hover-alpha">
+        <a href="/infinity/rfc/">
+          <img class="w-100" src="/infinity/resources/images/home_2019/bnr_rfc2024.jpg" alt="Share the Bloom 美しさは力になる。咲かせよう、可能性の花。">
+        </a>
+      </div>
+      <div class="bnr-long hover-alpha">
+        <a href="/infinity/counseling/">
+          <img class="w-100" src="/infinity/resources/images/home_2019/bnr_counseling.jpg" alt="INFINITY WEBカウンセリング">
+        </a>
+      </div>
+			<div class="bnr-long hover-alpha">
+        <a href="https://www.kose.co.jp/kose/hadamite_e/?utm_source=ift_brand&utm_medium=referral&utm_campaign=pre_2110&utm_term=20210818&utm_content=hadamite_e" target="_blank">
+          <img class="w-100" src="/infinity/resources/images/home_2019/bnr_hadamite.jpg" alt="KOSÉ HADAmite">
+        </a>
+      </div>
+			
+      <section id="sec-philosophy" class="philosophy">
+        <div class="philosophy-box">
+          <h2 class="philosophy-logo">
+
+          <img class="w-100" src="/infinity/resources/images/home_2019/philosophy_logo.png" alt="">
+
+        </h2>
+          <div class="philosophy-col pc">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/philosophy_text_01.png" alt="エイジングに対する考え方が、変わりはじめています。">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/philosophy_text_02.png" alt="年を重ねることを、恐れずに楽しむ。そんな女性たちが増えてきました。">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/philosophy_text_03.png" alt="肌の変化にも、同じような気持ちで向き合えるように。">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/philosophy_text_04.png" alt="力強いハリを蘇らせる、インフィニティの新スキンケア。">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/philosophy_text_05.png" alt="肌にみなぎる生命感は、年齢よりも雄弁にあなたを語ります。">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/philosophy_text_06.png" alt="さあ、ワクワクしてください。時代の変化に。そして、あなたの肌に。">
+          </div>
+          <div class="philosophy-col sp">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/sp/philosophy_text_01.png" alt="エイジングに対する考え方が、">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/sp/philosophy_text_02.png" alt="変わりはじめています。">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/sp/philosophy_text_03.png" alt="年を重ねることを、恐れずに楽しむ。">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/sp/philosophy_text_04.png" alt="そんな女性たちが増えてきました。">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/sp/philosophy_text_05.png" alt="肌の変化にも、">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/sp/philosophy_text_06.png" alt="同じような気持ちで向き合えるように。">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/sp/philosophy_text_07.png" alt="力強いハリを蘇らせる、">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/sp/philosophy_text_08.png" alt="インフィニティの新スキンケア。">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/sp/philosophy_text_09.png" alt="肌にみなぎる生命感は、">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/sp/philosophy_text_10.png" alt="年齢よりも雄弁にあなたを語ります。">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/sp/philosophy_text_11.png" alt="さあ、ワクワクしてください。">
+            <img class="philosophy-text" src="/infinity/resources/images/home_2019/sp/philosophy_text_12.png" alt="時代の変化に。そして、あなたの肌に。">
+          </div>
+        </div>
+      </section>
+      <div class="main-contents">
+        <section id="sec-prestigious" class="prestigious">
+          <div class="harf">
+            <div class="harf-box harf-box__center motion-box" data-mode="up">
+              <h2 class="category-title">プレステジアス　スペシャルサイト</h2>
+              <div class="products-col products-col__prestigious motion-target">
+                <i class="icon-link-black"></i>
+                <a href="/infinity/special/prestigious/" class="products-col__link">
+                  <div class="basic"></div>
+                  <div class="over">
+                    <div class="over-bg"></div>
+                    <div class="over-box">
+                      <h3 class="title">プレステジアス　スペシャルサイト</h3>
+                      <div class="btn-more">
+                        <img class="w-100" src="/infinity/resources/images/home_2019/btn_more.png" alt="MORE">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="sec-lineup" class="lineup">
+          <h2 class="category-title">商品ラインナップ</h2>
+          <div class="harf">
+            <div class="harf-box motion-box" data-mode="up">
+              <div class="lineup-col lineup-col__series motion-target">
+                <i class="icon-link-gray"></i>
+                <a href="/infinity/product/series/infinity/" class="products-col__link">
+                  <div class="basic">
+                    <h3 class="title color-black">シリーズから探す</h3>
+                  </div>
+                  <div class="over">
+                    <div class="over-bg"></div>
+                    <div class="over-box">
+                      <h3 class="title">シリーズから探す</h3>
+                      <div class="btn-more">
+                        <img class="w-100" src="/infinity/resources/images/home_2019/btn_more.png" alt="MORE">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="harf-box motion-box" data-mode="up">
+              <div class="lineup-col lineup-col__category motion-target">
+                <i class="icon-link-gray"></i>
+                <a href="/infinity/product/category/skincare/" class="products-col__link">
+                  <div class="basic">
+                    <h3 class="title color-black">カテゴリから探す</h3>
+                  </div>
+                  <div class="over">
+                    <div class="over-bg"></div>
+                    <div class="over-box">
+                      <h3 class="title">カテゴリから探す</h3>
+                      <div class="btn-more">
+                        <img class="w-100" src="/infinity/resources/images/home_2019/btn_more.png" alt="MORE">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="sec-brand" class="brand">
+          <div class="harf">
+						<div class="harf-box motion-box" data-mode="up">
+              <h2 class="category-title">INFINITYのストーリー</h2>
+              <div class="brand-col brand-col__concept motion-target">
+                <i class="icon-link-orenge"></i>
+                <a href="/infinity/story/" class="products-col__link">
+                  <div class="basic">
+                    <img class="title w-100" src="/infinity/resources/images/home_2019/brand_concept_logo.png" alt="INFINITY KOS&Eacute;">
+                  </div>
+                  <div class="over">
+                    <div class="over-bg"></div>
+                    <div class="over-box">
+                      <img class="title w-100" src="/infinity/resources/images/home_2019/brand_concept_logo.png" alt="INFINITY KOS&Eacute;">
+                      <div class="btn-more">
+                        <img class="w-100" src="/infinity/resources/images/home_2019/btn_more.png" alt="MORE">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="harf-box motion-box" data-mode="up">
+              <h2 class="category-title">INFINITYの店頭体験</h2>
+              <div class="brand-col brand-col__experience motion-target">
+                <i class="icon-newwindow-sky"></i>
+                <a href="/infinity/imcube/index.html" target="_blank" class="products-col__link">
+                  <div class="basic">
+                    <img class="title w-100" src="/infinity/resources/images/home_2019/brand_experience_logo.png" alt="INFINITY × イオン美顔器 IM-CUBE 店頭で至福の体験を">
+                  </div>
+                  <div class="over">
+                    <div class="over-bg"></div>
+                    <div class="over-box">
+                      <img class="title w-100" src="/infinity/resources/images/home_2019/brand_experience_logo_on.png" alt="INFINITY × イオン美顔器 IM-CUBE">
+                      <div class="btn-more">
+                        <img class="w-100" src="/infinity/resources/images/home_2019/btn_more.png" alt="MORE">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="sec-shop" class="shop motion-box" data-mode="up">
+          <h2 class="category-title">取り扱い店舗</h2>
+          <ul class="shop-list__ul motion-target">
+            <li class="shop-list__li">
+              <a href="https://pkg.navitime.co.jp/kose-shoplist/spot/list?c_d12=1" target="_blank" class="shop-list__banner">
+                <div class="shop-list__col">
+                  <img class="ph" src="/infinity/resources/images/home_2019/shop_ph_infinity.png" alt="">
+                  <div class="col">
+                    <div class="logo">
+                      <img class="w-100 on" src="/infinity/resources/images/home_2019/shop_logo_infinity_on.png" alt="INFINITY">
+                      <img class="w-100 basic" src="/infinity/resources/images/home_2019/shop_logo_infinity.png" alt="INFINITY">
+                      <p class="text">取り扱い店舗はこちら</p>
+                    </div>
+                  </div>
+                  <i class="icon-newwindow_bnr"></i>
+                </div>
+              </a>
+            </li>
+            <li class="shop-list__li">
+              <a href="https://pkg.navitime.co.jp/kose-shoplist/spot/list?c_d13=1" target="_blank" class="shop-list__banner">
+                <div class="shop-list__col">
+                  <img class="ph" src="/infinity/resources/images/home_2019/shop_ph_prestigious.png" alt="">
+                  <div class="col">
+                    <div class="logo">
+                      <img class="w-100 on" src="/infinity/resources/images/home_2019/shop_logo_prestigious_on.png" alt="INFINITY KOS&Eacute; PRESTIGIOUS">
+                      <img class="w-100 basic" src="/infinity/resources/images/home_2019/shop_logo_prestigious.png" alt="INFINITY KOS&Eacute; PRESTIGIOUS">
+                      <p class="text">取り扱い店舗はこちら</p>
+                    </div>
+                  </div>
+                  <i class="icon-newwindow_bnr"></i>
+                </div>
+              </a>
+            </li>
+            <li class="shop-list__li">
+              <a href="https://www.kose.co.jp/jp/ja/products/brand/infinity/sp/shop/imcube/" target="_blank" class="shop-list__banner">
+                <div class="shop-list__col">
+                  <img class="ph" src="/infinity/resources/images/home_2019/shop_ph_imcube.png" alt="">
+                  <div class="col">
+                    <div class="logo">
+                      <img class="w-100 on" src="/infinity/resources/images/home_2019/shop_logo_imcube_on.png" alt="イオン美顔器 IM-CUBE体験">
+                      <img class="w-100 basic" src="/infinity/resources/images/home_2019/shop_logo_imcube.png" alt="イオン美顔器 IM-CUBE体験">
+                      <p class="text">取り扱い店舗はこちら</p>
+                    </div>
+                  </div>
+                  <i class="icon-newwindow_bnr"></i>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+{%- endblock -%}

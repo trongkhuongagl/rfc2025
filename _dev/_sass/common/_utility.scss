@@ -1,0 +1,175 @@
+/* CSS に反映される */
+@mixin mediaQuery($mediaSize){
+	  @if $mediaSize == tb{
+	    @media all and (max-width: $tablet + px) {
+	      @content;
+	    }
+	  }
+	  @else if $mediaSize == sp{
+	    @media all and (max-width: $sp + px) {
+	      @content;
+	    }
+	  }
+}
+
+@mixin clearfix {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin percent($property,$parentPxWidth, $pxWidth ){
+    #{$property}: floor((( $pxWidth / $parentPxWidth ) * 10000% )) / 100;
+}
+
+@mixin calc($property, $expression) { 
+  #{$property}: -moz-calc(#{$expression}); 
+  #{$property}: -o-calc(#{$expression}); 
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+}
+
+@mixin aspect($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin inline-block {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+
+@mixin font-rem($size) {
+    font-size: $size + px;
+    font-size: ($size / 10) * 1rem;
+}
+
+
+
+
+@mixin font-face($style-name, $file, $category:"") {
+  $filepath: "/assets/fonts/" + $file;
+  @font-face {
+      font-family: "#{$style-name}";
+      src: url($filepath + ".eot");
+      src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf")  format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
+  }
+  %#{$style-name} {
+    @if $category != "" {
+        font-family: "#{$style-name}", #{$category};
+    }@else {
+        font-family: "#{$style-name}";
+        font-weight: normal;
+    }
+  }
+}
+
+
+@mixin css3($property, $value) {
+     @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+          #{$prefix}#{$property}: $value;
+     }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacityIE: $opacity * 100;
+  filter: alpha(opacity=$opacityIE);
+}
+
+@mixin transition($value){
+  @include css3(transition, $value);
+}
+
+/* キーフレームアニメーション */
+@mixin keyframes($animation-name: animaton) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($animation-name) {
+  -webkit-animation: $animation-name;
+  -moz-animation: $animation-name;
+  animation: $animation-name;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@mixin youtuberesponsive($width,$height) {
+  $per : '%';
+  position: relative;
+  width: 100%;
+  padding-top: $height / $width * 100%;
+  iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@function percent($numerator,$denominator) {
+  @return floor((( $numerator / $denominator) * 10000% )) / 100;
+}
+
+@mixin box-center-all() {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@function pxToVw($pxValue,$BreakPoint:640) {
+	@return (($pxValue / $BreakPoint) * 100) + vw;
+  }
+  
+  @function pxToHalf($size) {
+	@return floor($size / 2) + px;
+  }
+
+  @function svgBlank($rgba) {
+	$ico :"data:image/svg+xml;charset=utf-8,%3Csvg  xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12px' height='12px'%3E%3Cdefs%3E%3Cfilter id='Filter_0'%3E%3CfeFlood flood-color='#{$rgba}' flood-opacity='1' result='floodOut' /%3E%3CfeComposite operator='atop' in='floodOut' in2='SourceGraphic' result='compOut' /%3E%3CfeBlend mode='normal' in='compOut' in2='SourceGraphic' /%3E%3C/filter%3E%3C/defs%3E%3Cg filter='url(%23Filter_0)'%3E%3Cpath fill-rule='evenodd'  fill='rgb(133, 133, 133)' d='M10.040,8.000 L10.040,7.991 L8.031,7.991 L8.031,10.023 L8.031,11.001 L8.031,11.022 L1.040,11.022 L1.040,11.031 L0.040,11.031 L0.040,11.022 L0.031,11.022 L0.031,10.023 L0.040,10.023 L0.040,4.031 L-0.000,4.031 L-0.000,3.031 L0.040,3.031 L1.040,3.031 L3.009,3.031 L3.009,1.990 L3.000,1.990 L3.000,0.991 L3.000,-0.009 L11.000,-0.009 L11.000,0.000 L11.040,0.000 L11.040,8.000 L10.040,8.000 ZM1.040,4.031 L1.040,10.023 L7.031,10.023 L7.031,7.991 L4.009,7.991 L4.009,8.000 L3.009,8.000 L3.009,7.991 L3.000,7.991 L3.000,6.991 L3.009,6.991 L3.009,4.031 L1.040,4.031 ZM4.009,6.991 L10.040,6.991 L10.040,1.990 L4.009,1.990 L4.009,6.991 Z'/%3E%3C/g%3E%3C/svg%3E";
+	@return $ico;
+  }
+
+  @function svgArrow($rgba) {
+	$ico :'data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212px%22%20height%3D%2220px%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20fill%3D%22#{$rgba}%22%20d%3D%22M-0.006%2C18.698%20L9.297%2C10.001%20L-0.006%2C1.302%20L1.465%2C0.003%20L12.006%2C10.001%20L1.465%2C19.997%20L-0.006%2C18.698%20Z%22%2F%3E%3C%2Fsvg%3E';
+	@return $ico;
+  }

@@ -1,0 +1,298 @@
+$contentsPcW: 1200;
+$basicPcW: 1360;
+$maxPcW: 1400;
+$contentsSpW: 560;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&display=swap');
+.cat-prestigious {
+    .events {
+        .font-Noto_Serif_JP {
+            font-family: 'Noto Serif JP', serif;
+            font-weight: normal;
+        }
+        .flex-reverse {
+            flex-direction: row-reverse;
+        }
+        .color-gold {
+            color: #efc26b !important;
+        }
+        .btn-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: pxToVw(60, 1360);
+            z-index: 100;
+            @include mediaQuery(sp) {
+                width: pxToVw(60);
+            }
+        }
+        .sec-top__wrap {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 100px 10px 0;
+            background: url('/infinity/resources/images/special/prestigious_2020/events_2020/top_bg.png');
+            background-repeat: no-repeat;
+            background-size: auto 90%;
+            background-position: center center;
+            @include mediaQuery(sp) {
+                padding: pxToVw(100) 20px;
+                background-size: 200% auto;
+                background-position: center -30%;
+            }
+        }
+        .sec-top__head {
+            img {
+                display: block;
+            }
+        }
+        .sec-top__day {
+            width: auto;
+            max-width: 473px;
+            margin: 0 auto;
+            @include mediaQuery(sp) {
+                width: pxToVw(473);
+                max-width: 100%;
+            }
+        }
+        .sec-top__logo {
+            width: auto;
+            max-width: 152px;
+            margin: 40px auto;
+            @include mediaQuery(sp) {
+                width: pxToVw(153);
+                max-width: 100%;
+                margin: pxToVw(40) auto;
+            }
+        }
+        .sec-top__title {
+            width: auto;
+            max-width: 766px;
+            margin: 0 auto;
+            @include mediaQuery(sp) {
+                width: pxToVw(395);
+                max-width: 100%;
+            }
+        }
+
+        .sec-top__text {
+            @include font-rem(18);
+            line-height: 2;
+            color: #efc26b;
+            text-align: center;
+            margin-top: 60px;
+            @include mediaQuery(sp) {
+                @include font-rem(11);
+                margin: pxToVw(60) auto 0;
+                text-align: left;
+                width: pxToVw(490);
+            }
+        }
+
+        .sec-profile__wrap {
+            background: #111;
+            box-sizing: border-box;
+            padding: 40px;
+            width: 100%;
+            max-width: 800px;
+            margin: 90px auto 0;
+            @include mediaQuery(sp) {
+				margin: pxToVw(65) auto 0;
+				padding: pxToVw(40);
+            }
+        }
+
+        .sec-profile__name {
+            width: auto;
+            max-width: 216px;
+			margin: 0 auto 40px;
+			@include mediaQuery(sp){
+				width: pxToVw(216);
+				margin: 0 auto pxToVw(30);
+			};
+        }
+
+        .sec-profile__text {
+            @include font-rem(14);
+            line-height: 2;
+            color: #ccc;
+			text-align: left;
+			@include mediaQuery(sp){
+				@include font-rem(10);
+			};
+        }
+
+        .sec-movie {
+            position: relative;
+			margin-top: 100px;
+			@include mediaQuery(sp){
+				margin-top:0;
+			};
+        }
+
+        .sec-salon {
+            box-sizing: border-box;
+			padding: 100px 10px 0;
+			@include mediaQuery(sp){
+				padding: pxToVw(90) 0 0;
+			};
+        }
+        .sec-salon__title {
+            position: relative;
+            text-align: center;
+            margin: 0 auto;
+            width: auto;
+            max-width: 223px;
+            padding: 0 20px 20px;
+			border-bottom: solid 1px #cfab61;
+			@include mediaQuery(sp){
+				width: pxToVw(213);
+				padding: 0 pxToVw(20) pxToVw(20);
+			};
+        }
+
+        .sec-salon__lead {
+            @include font-rem(26);
+            // font-size: pxToVw(26,1200);
+            line-height: 1.4;
+            color: #fff;
+            text-align: left;
+            margin-bottom: 30px;
+            /* @media screen and (min-width:1200px){
+				@include font-rem(26);
+			}; */
+			@include mediaQuery(sp){
+				@include font-rem(18);
+				margin-bottom: 20px;
+			};
+        }
+
+        .sec-salon__text {
+            // font-size: pxToVw(16,1200);
+            @include font-rem(16);
+            line-height: 1.9;
+            color: #fff;
+            text-align: left;
+            margin-bottom: 30px;
+            /* @media screen and (min-width:1200px){
+				@include font-rem(16);
+			}; */
+			@include mediaQuery(sp){
+				@include font-rem(11);
+				margin-bottom: 15px;
+			};
+        }
+
+        .sec-salon__link {
+            @include font-rem(16);
+            text-decoration: underline;
+            line-height: 1.6;
+            &:hover {
+                text-decoration: none;
+			}
+			@include mediaQuery(sp){
+				@include font-rem(11);
+			};
+        }
+
+        .sec-salon__contents {
+            width: 100%;
+            max-width: 1200px;
+            margin: 100px auto;
+            display: flex;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+			@include mediaQuery(sp){
+				margin:pxToVw(70) auto;
+				display: block;
+				padding: 0 20px;
+			};
+        }
+
+        .sec-salon__box {
+			width: 50%;
+			@include mediaQuery(sp){
+				width: 100%;
+			};
+            &--col {
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+            }
+            &--description {
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 0 10px;
+				justify-content: center;
+				@include mediaQuery(sp){
+					padding: 0;
+					width: pxToVw(460);
+					margin: 0 auto;
+				};
+            }
+            &--bg {
+                background: url('/infinity/resources/images/special/prestigious_2020/events_2020/salon_bg.png');
+                background-repeat: no-repeat;
+                background-size: 80% auto;
+                background-position: center center;
+            }
+            &--bg2 {
+                background: url('/infinity/resources/images/special/prestigious_2020/events_2020/salon_bg_g.png');
+                background-repeat: no-repeat;
+                background-size: 80% auto;
+                background-position: center center;
+            }
+            &--block {
+                width: 100%;
+				max-width: 420px;
+				@include mediaQuery(sp){
+					margin-top: pxToVw(40);
+				};
+            }
+        }
+
+        .sec-salon__comment {
+            text-align: center;
+            width: 100%;
+            &--message {
+                width: percent(392, 600);
+                max-width: 392px;
+                margin: 0 auto;
+            }
+            &--name {
+                width: percent(96, 600);
+                max-width: 96px;
+                margin: pxToVw(46, 1200) auto 0;
+                @media screen and (min-width: 1200px) {
+                    margin-top: 46px;
+                }
+            }
+        }
+
+        .aside {
+            width: 100%;
+            max-width: 1080px;
+            display: flex;
+            justify-content: space-between;
+			margin: 0 auto 100px;
+			box-sizing: border-box;
+			padding: 0 10px;
+			@include mediaQuery(sp){
+				display: block;
+				margin: 0 auto pxToVw(40);
+				padding: 0 20px;
+			};
+            &-btn {
+                width: percent(490, 1060);
+                max-width: 490px;
+                padding: 0;
+				margin: 0;
+				@include mediaQuery(sp){
+					width: 100%;
+					margin-bottom: pxToVw(40);
+					display: block;
+				};
+            }
+        }
+    }
+}

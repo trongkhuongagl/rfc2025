@@ -1,0 +1,58 @@
+{%- set domainPath = config.domain -%}
+{%- set rootPath = "/infinity/" -%}
+{# {%- set rootPath = dataPathRelative -%} #}
+{% set pageName = pageTitle %}
+{%- set assetsFolder = "resources/" -%}{# resourcesフォルダ #}
+{%- set imagePath = rootPath+assetsFolder+"images/" -%}{# 画像フォルダ #}
+{%- set cssPath = rootPath+assetsFolder+"css/" -%}{# CSSフォルダ #}
+{%- set jsPath = rootPath+assetsFolder+"js/" -%}{# JSフォルダ #}
+{%- set ogPath = domainPath+assetsFolder+"images/og_2020/" -%}{# OG画像フォルダ #}
+{%- set ogFile = "og.jpg" -%}
+{% set noKeyword = noKeyword %}
+<!DOCTYPE html>
+<html lang="ja">
+  {#- include:ヘッダ -#}
+  <head>
+    {#- 解析タグ -#}
+    {% include "_layout/_core/_analysis/_gtmhead.njk" %}
+
+		{%- if pageCategory=="cat-home" %}{% include "_layout/_core/_analysis/_clarity.njk" %}{% endif -%}
+		{%- if pageCategory=="cat-rfc2024" %}{% include "_layout/_core/_analysis/_clarity_rfc_2024.njk" %}{% endif -%}
+    {#- meta系 -#}
+    {% include "_layout/_core/_head/_meta.njk" %}
+    {%- block option_meta %}{% endblock -%}
+    {#- OG系 -#}
+    {% if isOG %}{% include "_layout/_core/_head/_og.njk" %}{%- endif -%}
+    {%- block option_og %}{% endblock -%}
+    {#- CSS系 -#}
+    {% include "_layout/_core/_head/_css.njk" %}
+    {%- block option_css %}{% endblock -%}
+    {#- 各ページのオリジナル追加はoption_headを使用 -#}
+    {%- block option_head %}{% endblock -%}
+  </head>
+  <body class="{{pageCategory}} {% if (pageCategory != 'cat-home') %}underlayer{% endif %}">
+    {#- 解析タグ -#}
+    {% include "_layout/_core/_analysis/_gtmbody.njk" %}
+    <p class="acc_nav"><a href="#end_header">ナビゲーションをスキップ</a></p>
+    {#- include:ナビゲーション -#}
+		<header class="global-header">
+    {% include "_layout/_module/_globalnavigation.njk" %}
+		</header>
+    <p class="acc_nav" id="end_header">ここから本文です</p>
+    <main>
+      {% block content_main %}{% endblock %}
+    </main>
+    {#- fotter -#}
+		<footer class="global-footer">
+    {% include "_layout/_module/_fotter.njk" %}
+		</footer>
+    {#- js -#}
+    {% include "_layout/_core/_js/_js.njk" %}
+    {%- block option_js %}{% endblock -%}
+    {#- 解析タグ -#}
+    {% include "_layout/_core/_analysis/_ga.njk" %}
+    {%- block option_analysis %}{% endblock -%}
+    {#- 各ページのオリジナル追加はoption_endを使用 -#}
+    {%- block option_end %}{% endblock -%}
+  </body>
+</html>

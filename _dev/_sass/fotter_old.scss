@@ -1,0 +1,720 @@
+@import 'common/_utility';
+@import 'setting/_config';
+
+
+.content_width {
+    margin: 0 auto;
+}
+
+.global-footer {
+    background-color: #fff;
+    min-width: 1180px;
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'MS PGothic', 'MS UI Gothic', Helvetica, Arial, sans-serif;
+    @include mediaQuery(sp) {
+        min-width: 0;
+    }
+}
+
+.footer-nav {
+    //   @include clearfix;
+    overflow: hidden;
+    *zoom: 1;
+    display: block;
+    background-color: #282727;
+    .content_width {
+        height: 488px;
+        position: relative;
+        width: 1130px;
+		line-height: 1;
+        @include mediaQuery(sp) {
+            height: auto;
+            width: auto;
+        }
+    }
+    .logo,
+    .contents,
+    .sns,
+    .pagetop {
+        position: absolute;
+        @include mediaQuery(sp) {
+            position: relative;
+        }
+    }
+
+    .logo {
+        top: 63px;
+        @include mediaQuery(sp) {
+            margin-top: 55px;
+            top: 0px;
+        }
+        &__anchor {
+            @include mediaQuery(sp) {
+                // @include replace-text-with-dimensions-retina("footer/sp/logo.png");
+                background-image: url('/infinity/resources/images/footer/sp/logo.png?1535334381');
+                background-repeat: no-repeat;
+                -moz-background-size: 139.5px auto;
+                -o-background-size: 139.5px auto;
+                -webkit-background-size: 139.5px auto;
+                background-size: 139.5px auto;
+                text-indent: -119988px;
+                overflow: hidden;
+                text-align: left;
+                text-transform: capitalize;
+                background-position: 50% 50%;
+                height: 56.5px;
+                width: 139.5px;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+    /* /logo */
+    .sns {
+        display: flex;
+        right: 0;
+        top: 60px;
+        @include mediaQuery(sp) {
+            justify-content: center;
+            margin-top: 22px;
+            top: 0px;
+        }
+        > * + * {
+            margin-left: 16px;
+            @include mediaQuery(sp) {
+                margin-left: 12px;
+            }
+        }
+
+        &__item {
+        }
+        a {
+            @include font-rem(22);
+            background: #fff;
+            border-radius: 50%;
+            color: #272727;
+            display: block;
+            line-height: 22px;
+            position: relative;
+            text-align: center;
+            height: 50px;
+            width: 50px;
+            @include mediaQuery(sp) {
+                @include font-rem(18);
+                height: 38px;
+                width: 38px;
+            }
+            i {
+                position: absolute;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                height: 22px;
+            }
+            &:hover {
+            }
+
+            .fab {
+                &.fa-facebook-f {
+                }
+            }
+            .fab {
+                &.fa-twitter {
+                }
+            }
+            .fab {
+                &.fa-line {
+                    @include font-rem(35);
+                    color: #fff;
+                    height: 35px;
+                    @include mediaQuery(sp) {
+                        @include font-rem(30);
+                        height: 30px;
+                    }
+                }
+            }
+            .fas {
+                &.fa-circle {
+                    @include font-rem(25);
+                    color: #272727;
+                    @include mediaQuery(sp) {
+                    }
+                }
+            }
+        }
+    }
+    /* /sns */
+    .contents {
+        top: 169px;
+        letter-spacing: 1px;
+        @include mediaQuery(sp) {
+            //border-bottom: 1px solid #464545;
+            border-top: 1px solid #464545;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 30px auto 0;
+            min-height: 150px;
+            top: 0;
+            width: calc(100% - 20px);
+        }
+
+        &__item {
+            display: inline-block;
+            position: absolute;
+            @include mediaQuery(sp) {
+                border-bottom: 1px solid #464545;
+                box-sizing: border-box;
+                position: relative;
+            }
+
+            > span,
+            > a {
+                @include font-rem(16);
+                color: #fff;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+                @include mediaQuery(sp) {
+                    @include font-rem(12);
+                    font-size: 3.5vw;
+                    display: block;
+                    height: 50px;
+                    line-height: 50px;
+                    padding-left: 14px;
+                }
+                &:hover {
+                }
+            }
+            > span:hover {
+                text-decoration: none;
+            }
+            i {
+                margin-right: 10px;
+            }
+            &.onlineshop {
+                width: 181px;
+                @include mediaQuery(sp) {
+                    border-right: 1px solid #464545;
+                    order: 1;
+                    width: 50%;
+                }
+            }
+            &.counseling {
+                top: 50px;
+                width: 181px;
+                @include mediaQuery(sp) {
+                    order: 2;
+                    top: auto;
+                    width: 50%;
+                }
+            }
+            &.cm {
+                top: 100px;
+                width: 181px;
+                @include mediaQuery(sp) {
+                    border-right: 1px solid #464545;
+                    order: 3;
+                    top: auto;
+                    width: 50%;
+                }
+            }
+            &.newitem {
+                top: 150px;
+                width: 181px;
+                @include mediaQuery(sp) {
+                    border-right: 1px solid #464545;
+                    order: 5;
+                    top: auto;
+                    width: 50%;
+                }
+            }
+            &.product {
+                left: 221px;
+                width: 544px;
+                span {
+                    cursor: auto;
+                }
+                @include mediaQuery(sp) {
+                    border-right: 1px solid #464545;
+                    left: auto;
+                    order: 7;
+                    position: relative;
+                    width: 50%;
+                    .subcontents {
+                        .m-spfooterproduct-close & {
+                            display: none;
+                        }
+                        .m-spfooterproduct-open & {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            &.story {
+                top: 200px;
+                width: 181px;
+                @include mediaQuery(sp) {
+                    order: 4;
+                    top: auto;
+                    width: 50%;
+                }
+            }
+            &.special {
+                left: 763px;
+                width: 129px;
+                @include mediaQuery(sp) {
+                    order: 6;
+                    left: auto;
+                    width: 50%;
+                }
+            }
+            &.experience {
+                left: 763px;
+                top: 50px;
+                width: 129px;
+                @include mediaQuery(sp) {
+                    border-right: 1px solid #464545;
+                    left: auto;
+                    order: 9;
+                    top: auto;
+                    width: 50%;
+                }
+            }
+            &.shop {
+                left: 763px;
+                top: 100px;
+                width: 330px;
+                span {
+                    cursor: auto;
+                }
+                @include mediaQuery(sp) {
+                    left: auto;
+                    order: 8;
+                    position: relative;
+                    top: auto;
+                    width: 50%;
+                    .subcontents {
+                        margin-left: -100%;
+                        .m-spfootershop-close & {
+                            display: none;
+                        }
+                        .m-spfootershop-open & {
+                            display: block;
+                        }
+                        .subcontents__item__anchor {
+                            display: inline-block;
+                            line-height: 1.5;
+                            padding-left: 1em;
+                            text-indent: -1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* /contents */
+    .subcontents {
+        @include mediaQuery(sp) {
+            display: none;
+            background: #282727;
+            width: calc(100vw - 20px);
+            position: relative;
+            z-index: 1;
+        }
+        &__close {
+            @include mediaQuery(sp) {
+                @include font-rem(15);
+                background-color: #3e3d3d;
+                color: #fff;
+                cursor: pointer;
+                height: 45px;
+                position: absolute;
+                line-height: 45px;
+                right: 0;
+                text-align: center;
+                top: -45px;
+                width: 69px;
+                &::before {
+                    //   @include replace-text-with-dimensions-retina("chevron-w11-left.png");
+                    background-image: url('/infinity/resources/images/chevron-w11-left.png?1535269534');
+                    background-repeat: no-repeat;
+                    -moz-background-size: 5.5px auto;
+                    -o-background-size: 5.5px auto;
+                    -webkit-background-size: 5.5px auto;
+                    background-size: 5.5px auto;
+                    text-indent: -119988px;
+                    overflow: hidden;
+                    text-align: left;
+                    text-transform: capitalize;
+                    background-position: 50% 50%;
+                    height: 11.5px;
+                    content: ' ';
+                    display: inline-block;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        &__item {
+            position: absolute;
+            top: 45px;
+            @include mediaQuery(sp) {
+                border-top: 1px solid #464545;
+                padding: 15px 30px;
+                position: relative;
+                top: 0;
+            }
+            &__anchor {
+                &::before {
+                    content: '[';
+                    @include mediaQuery(sp) {
+                        //@include replace-text-with-dimensions-retina("footer/sp/footer__listmark.png");
+                        background-image: url('/infinity/resources/images/footer/sp/footer__listmark.png?1535343015');
+                        background-repeat: no-repeat;
+                        -moz-background-size: 15.5px auto;
+                        -o-background-size: 15.5px auto;
+                        -webkit-background-size: 15.5px auto;
+                        background-size: 15.5px auto;
+                        text-indent: -119988px;
+                        overflow: hidden;
+                        text-align: left;
+                        text-transform: capitalize;
+                        background-position: 50% 50%;
+                        height: 1px;
+                        width: 15.5px;
+                        content: 'から探す';
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+                &::after {
+                    content: ']';
+                    @include mediaQuery(sp) {
+                        content: 'から探す';
+                    }
+                }
+            }
+            &.category {
+                left: 15px;
+                @include mediaQuery(sp) {
+                    left: 0;
+                }
+            }
+            &.series {
+                left: 220px;
+                @include mediaQuery(sp) {
+                    left: 0;
+                }
+            }
+            &.shop-inf a,
+            &.shop-prs a,
+            &.shop-imc a,
+            &.shop-ctr a {
+                @include font-rem(12);
+                &::before,
+                &::after {
+                    content: none;
+                }
+            }
+            &.shop-inf {
+                left: 17px;
+                top: 45px;
+                @include mediaQuery(sp) {
+                    left: 0;
+                    top: 0;
+                }
+            }
+            &.shop-prs {
+                left: 17px;
+                top: 80px;
+                @include mediaQuery(sp) {
+                    left: 0;
+                    top: 0;
+                }
+            }
+            &.shop-imc {
+                left: 17px;
+                top: 115px;
+                @include mediaQuery(sp) {
+                    left: 0;
+                    top: 0;
+                }
+            }
+            &.shop-ctr {
+                left: 17px;
+                top: 150px;
+                @include mediaQuery(sp) {
+                    left: 0;
+                    top: 0;
+                }
+            }
+            a {
+                @include font-rem(14);
+                color: #ababab;
+                &:hover {
+                    text-decoration: underline;
+                }
+                @include mediaQuery(sp) {
+                    @include font-rem(15);
+                    color: #fff;
+                }
+                &:hover {
+                }
+            }
+            .icon-shevron-w5-gray {
+                &::after {
+                    @include mediaQuery(sp) {
+                        // @include replace-text-with-dimensions-retina("footer/sp/footer__chevron-w7-gray.png");
+                        background-image: url('/infinity/resources/images/footer/sp/footer__chevron-w7-gray.png?1535342002');
+                        background-repeat: no-repeat;
+                        -moz-background-size: 3.5px auto;
+                        -o-background-size: 3.5px auto;
+                        -webkit-background-size: 3.5px auto;
+                        background-size: 3.5px auto;
+                        text-indent: -119988px;
+                        overflow: hidden;
+                        text-align: left;
+                        text-transform: capitalize;
+                        background-position: 50% 50%;
+                        height: 6.5px;
+                        width: 3.5px;
+                    }
+                }
+            }
+            ul {
+                @include mediaQuery(sp) {
+                    margin-left: 15px;
+                }
+                li {
+                    margin-top: 18px;
+                }
+                a {
+                    @include mediaQuery(sp) {
+                        @include font-rem(12);
+                        color: #fff;
+                    }
+                    &:hover {
+                    }
+                }
+                .icon-shevron-w5-gray {
+                }
+            }
+        }
+    }
+    /* /subcontents */
+    .pagetop {
+        bottom: 0;
+        cursor: pointer;
+        right: 0;
+		font-size: 0;
+        @include mediaQuery(sp) {
+            //   @include replace-text-with-dimensions-retina("footer/sp/pagetop.png");
+            background-image: url('/infinity/resources/images/footer/sp/pagetop.png?1535334166');
+            background-repeat: no-repeat;
+            -moz-background-size: 66px auto;
+            -o-background-size: 66px auto;
+            -webkit-background-size: 66px auto;
+            background-size: 66px auto;
+            text-indent: -119988px;
+            overflow: hidden;
+            text-align: left;
+            text-transform: capitalize;
+            background-position: 50% 50%;
+            height: 58px;
+            width: 66px;
+            margin: 50px auto 0;
+        }
+    }
+
+    .subcontents__item ul li {
+        // line-height: 10px;
+    }
+
+    .icon-shevron-w5::after {
+        content: '';
+        display: inline-block;
+        text-indent: -119988px;
+        overflow: hidden;
+        text-align: left;
+        text-transform: capitalize;
+        background-image: url('/infinity/resources/images/chevron-w5.png?1535109766');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 5px;
+        height: 9px;
+    }
+
+    @media screen and (max-width: 640px) {
+        .icon-shevron-w5::after {
+            background-image: url('/infinity/resources/images/chevron-w11.png?1535259590');
+            background-repeat: no-repeat;
+            -moz-background-size: 5.5px auto;
+            -o-background-size: 5.5px auto;
+            -webkit-background-size: 5.5px auto;
+            background-size: 5.5px auto;
+            text-indent: -119988px;
+            overflow: hidden;
+            text-align: left;
+            text-transform: capitalize;
+            background-position: 50% 50%;
+            height: 11.5px;
+            width: 5.5px;
+        }
+    }
+
+    .icon-shevron-w5-gray::after {
+        content: '';
+        display: inline-block;
+        text-indent: -119988px;
+        overflow: hidden;
+        text-align: left;
+        text-transform: capitalize;
+        background-image: url('/infinity/resources/images/chevron-w5-gray.png?1535109799');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 5px;
+        height: 9px;
+    }
+
+    @media screen and (max-width: 640px) {
+        .subcontents__item .icon-shevron-w5-gray::after {
+            background-image: url('/infinity/resources/images/footer/sp/footer__chevron-w7-gray.png?1535342002');
+            background-repeat: no-repeat;
+            -moz-background-size: 3.5px auto;
+            -o-background-size: 3.5px auto;
+            -webkit-background-size: 3.5px auto;
+            background-size: 3.5px auto;
+            text-indent: -119988px;
+            overflow: hidden;
+            text-align: left;
+            text-transform: capitalize;
+            background-position: 50% 50%;
+            height: 6.5px;
+            width: 3.5px;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .subcontents__close {
+            font-size: 15px;
+            font-size: 1.5rem;
+            background-color: #3e3d3d;
+            color: #fff;
+            cursor: pointer;
+            height: 45px;
+            position: absolute;
+            line-height: 45px;
+            right: 0;
+            text-align: center;
+            top: -45px;
+            width: 69px;
+        }
+        .subcontents__close::before {
+            background-image: url('/infinity/resources/images/chevron-w11-left.png?1535269534');
+            background-repeat: no-repeat;
+            -moz-background-size: 5.5px auto;
+            -o-background-size: 5.5px auto;
+            -webkit-background-size: 5.5px auto;
+            background-size: 5.5px auto;
+            text-indent: -119988px;
+            overflow: hidden;
+            text-align: left;
+            text-transform: capitalize;
+            background-position: 50% 50%;
+            height: 11.5px;
+            width: 5.5px;
+            content: ' ';
+            display: inline-block;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+    }
+}
+
+/* /footer-nav */
+
+.kose_copyright {
+    text-align: center;
+    padding-bottom: 56px;
+    letter-spacing: 1px;
+    @include mediaQuery(sp) {
+        padding-bottom: 20px;
+        .content_width {
+            ul {
+                font-size: 10px;
+                // line-height: 10px;
+            }
+            a {
+                // line-height: 10px;
+            }
+        }
+    }
+    .clubkose {
+        margin-top: 31px;
+        &__anchor {
+            img {
+                width: 237px;
+                @include mediaQuery(sp) {
+                    width: 259px;
+                }
+            }
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 29px;
+        @include font-rem(14);
+        // line-height: 1em;
+        @include mediaQuery(sp) {
+            display: block;
+            margin: 15px auto 0;
+            width: 280px;
+        }
+        > * + * {
+            border-left: 1px solid #000;
+            margin-left: 23px;
+            padding-left: 23px;
+            @include mediaQuery(sp) {
+                margin-left: 13px;
+                padding-left: 13px;
+            }
+        }
+        li {
+            @include mediaQuery(sp) {
+                display: inline-block;
+                margin-top: 1em;
+                &:nth-child(3) {
+                    border-left: none;
+                    margin-left: 0;
+                    padding-left: 0;
+                }
+            }
+            a {
+                @include font-rem(14);
+                color: #000;
+                @include mediaQuery(sp) {
+                    @include font-rem(11);
+                }
+                &:hover {
+                }
+            }
+        }
+    }
+    .copyright {
+        @include font-rem(10);
+        margin-top: 29px;
+        color: #333;
+        @include mediaQuery(sp) {
+            @include font-rem(9);
+            border-top: 1px solid #e3e3e3;
+            margin-top: 40px;
+            padding-top: 15px;
+			line-height: 10px;
+        }
+    }
+}
+
+

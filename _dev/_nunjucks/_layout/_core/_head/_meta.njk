@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+{%- if isOnlyTitle -%}
+<title>{{pageTitle}}</title>
+{%- else -%}
+<title>{{pageTitle+" | "+config.nameSet}}</title>
+{%- endif -%}
+{%- if pageKeyword -%}
+<meta name="keywords" content="{{pageKeyword}}">
+{% elif noKeyword %}
+
+{%- else -%}
+<meta name="keywords" content="INFINITY,インフィニティ,KOSE,コーセー,スキンケア,ベース,ポイント,メイク,取扱,店舗,中村アン,夏木マリ,エイジング">
+{%- endif -%}
+<meta name="description" content="{{pageDescription}}">
+<meta name="author" content="KOSE Corporation.">
+<meta name="robots" content="index,follow">
+<meta name="google" value="notranslate">
+<link rel="icon" href="/infinity/resources/images/static_2020/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="{{domainPath}}resources/images/static_2020/apple-touch-icon.png">
+{%- block option_meta %}{% endblock -%}

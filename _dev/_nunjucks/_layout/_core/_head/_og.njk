@@ -1,0 +1,16 @@
+
+{%- if ogTitle %} {% set pageTitle = ogTitle %}{% endif -%}
+{%- if ogDescription %} {% set pageDescription = ogDescription %}{% endif -%}
+{%- if ogName %} {% set pageName = ogName %}{% endif -%}
+
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:type" content="{% if pageCategory==='top' %}website{% else %}article{% endif %}">
+<meta property="og:description" content="{{ pageDescription }}">
+<meta property="og:url" content="{% if pageDir %}{{ domainPath }}{{ pageDir }}{% else %}{{ domainPath }}{%- endif -%}">
+<meta property="og:image" content="{% if pageOgFile %}{{domainPath}}{{pageOgFile}}{% else %}{{ogPath}}{{ogFile}}{%- endif -%}" />
+<meta property="og:site_name" content="{{ pageName }}">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="{{ pageTitle }}">
+<meta property="twitter:description" content="{{ pageDescription }}">
+<meta property="twitter:image:src" content="{% if pageOgFile %}{{domainPath}}{{pageOgFile}}{% else %}{{ogPath}}{{ogFile}}{%- endif -%}">
+{%- block option_og %}{% endblock -%}

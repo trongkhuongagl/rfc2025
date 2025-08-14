@@ -1,0 +1,236 @@
+.cat-home {
+	#canvas {
+		position: relative;
+		z-index: 10;
+	}
+	/* #canvasBox{
+		background: #ff0000;
+	} */
+	.mv {
+		background: #000;
+	}
+	.mv-ul {
+		@include aspect(2560, 1335);
+		width: 100%;
+		overflow: hidden;
+		margin-top: 80px;
+		@include mediaQuery(sp) {
+			@include aspect(640, 854);
+			margin-top: 49px;
+			// margin-top:calc(#{percent(170,640)} + 50px);
+		}
+	}
+
+	/* &.bnr-hide .mv-ul{
+		@include mediaQuery(sp) {
+			margin-top: 50px;
+		}
+	} */
+
+	.mv-li {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		z-index: 0;
+		transition: opacity 1s;
+		&.active {
+			opacity: 1;
+			z-index: 10;
+		}
+		&__pos {
+			position: absolute;
+			display: block;
+			z-index: 100;
+		}
+		&__key {
+			/* background-image: url('/infinity/resources/images/home_2019/mv_01_ph.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% auto; */
+			@include mediaQuery(sp) {
+				/* background-image: url('/infinity/resources/images/home_2019/sp/mv_01_ph.jpg');
+				background-repeat: no-repeat;
+				background-size: 100% auto; */
+			}
+			&--ph {
+				position: relative;
+				z-index: 5;
+			}
+			&--copy-01 {
+				width: 19.02344vw;
+				top: 39.25%;
+				left: 74.609vw;
+				// transform: translate(-50%, 0);
+				@include mediaQuery(sp) {
+					width: 45.46875vw;
+					top: 67.33%;
+					left: 27.1875vw;
+					-webkit-transform: none;
+					transform: none;
+				}
+			}
+			&--logo {
+				width: 25.78125vw;
+				top: 45.32%;
+				left: 71.1328vw;
+				// transform: translate(-50%, 0);
+				@include mediaQuery(sp) {
+					width: 61.875vw;
+					top: 72.95%;
+					left: 19.6875vw;
+					-webkit-transform: none;
+					transform: none;
+				}
+			}
+		}
+
+		&__product {
+			// background-image: url('/infinity/resources/images/home_2019/mv_02_ph.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			@include mediaQuery(sp) {
+				// background-image: url('/infinity/resources/images/home_2019/sp/mv_02_ph.jpg');
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+			}
+			&--copy-01 {
+				width: pxToVw(923, 2560);
+				top: percent(275, 1335);
+				left: percent(1398, 2560);
+				// transform: translate(0, -50%);
+				@include mediaQuery(sp) {
+					width: pxToVw(103);
+					top: percent(220, 854);
+					left: pxToVw(480);
+				}
+			}
+			&--copy-02 {
+				width: pxToVw(768, 2560);
+				top: percent(600, 1335);
+				left: percent(1470, 2560);
+				// transform: translate(0, -50%);
+				@include mediaQuery(sp) {
+					width: pxToVw(301);
+					top: percent(50, 854);
+					left: 50%;
+					transform: translate(-50%, 0);
+				}
+			}
+		}
+	}
+	.mv-box {
+		position: relative;
+	}
+	.mv-Indicator {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		z-index: 10;
+		display: flex;
+		@include mediaQuery(sp) {
+			top: pxToVw(20);
+			left: pxToVw(20);
+		}
+	}
+
+	.mv-Indicator__li {
+		width: 13px;
+		height: 13px;
+		background-color: #666;
+		border-radius: 50%;
+		border:solid 1px #fff;
+		// display: inline-block;
+		margin-right: 10px;
+		cursor: pointer;
+		&.active{
+			background-color: #fff;
+			border:solid 1px #666;
+		}
+		@include mediaQuery(sp) {
+			width: pxToVw(15);
+			height: pxToVw(15);
+			margin-right: pxToVw(10);
+		}
+	}
+}
+
+/* html, body {
+        min-height: 100%;
+    }
+
+    body {
+        margin: 0;
+        font-size: 18px;
+        font-family: 'PT Sans', Verdana, sans-serif;
+        background: #ffffff;
+        line-height: 1.4;
+
+        overflow: hidden;
+    } */
+
+#page-wrap {
+	width: 100%;
+	/* height: 100vh;
+        overflow: hidden; */
+}
+
+/*** canvas ***/
+
+#canvas {
+	/* height: 100vh;
+		width: 100vw; */
+	width: 100%;
+	// height: 100vh;
+	height: auto;
+	background: #000;
+	@include aspect(2560, 1335);
+	@include mediaQuery(sp) {
+		@include aspect(640, 854);
+	}
+}
+
+/* #canvas:before {
+	content: '';
+	display: block;
+	padding-top: 75%;
+	@include mediaQuery(sp) {
+		// @include aspect(640,854);
+		padding-top: 149%;
+	}
+} */
+
+canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.curtain {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.curtain img {
+	display: none;
+}
+
+/*** handling errors ***/
+
+/* .no-curtains .curtain {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .no-curtains .curtain img {
+        display: block;
+        object-fit: cover;
+    } */

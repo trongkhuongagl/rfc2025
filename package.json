@@ -1,0 +1,62 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "テンプレート",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "connect-ssi": "^1.1.1",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-wait": "0.0.2",
+    "hard-source-webpack-plugin": "^0.12.0",
+    "jquery.ripples": "^0.6.2",
+    "node-sass": "^4.10.0",
+    "slick-carousel": "^1.8.1",
+    "ts-loader": "^5.2.2",
+    "typescript": "^3.1.3",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.0.8",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "@types/google.analytics": "0.0.39",
+    "@types/gsap": "^1.20.0",
+    "@types/hammerjs": "^2.0.36",
+    "@types/jquery": "^3.3.22",
+    "@types/jquery-match-height": "^0.7.4",
+    "@types/mcustomscrollbar": "^2.8.32",
+    "@types/slick-carousel": "^1.6.32",
+    "@types/svg4everybody": "^2.1.1",
+    "@types/three": "^0.103.2",
+    "@types/youtube": "0.0.35",
+    "curtainsjs": "^3.0.1",
+    "es6-promise": "^4.2.5",
+    "gsap": "^2.0.2",
+    "gulp-data": "^1.3.1",
+    "gulp-html-prettify": "0.0.1",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.3.1",
+    "jquery-match-height": "^0.7.2",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "svg4everybody": "^2.1.9",
+    "three": "^0.107.0"
+  },
+  "volta": {
+    "node": "12.14.0",
+    "npm": "7.3.0"
+  }
+}
