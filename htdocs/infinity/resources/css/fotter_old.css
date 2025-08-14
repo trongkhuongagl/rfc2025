@@ -1,1 +1,857 @@
-.content_width{margin:0 auto}.global-footer{background-color:#fff;min-width:1180px;font-family:'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'MS PGothic', 'MS UI Gothic', Helvetica, Arial, sans-serif}@media all and (max-width: 640px){.global-footer{min-width:0}}.footer-nav{overflow:hidden;*zoom:1;display:block;background-color:#282727}.footer-nav .content_width{height:488px;position:relative;width:1130px;line-height:1}@media all and (max-width: 640px){.footer-nav .content_width{height:auto;width:auto}}.footer-nav .logo,.footer-nav .contents,.footer-nav .sns,.footer-nav .pagetop{position:absolute}@media all and (max-width: 640px){.footer-nav .logo,.footer-nav .contents,.footer-nav .sns,.footer-nav .pagetop{position:relative}}.footer-nav .logo{top:63px}@media all and (max-width: 640px){.footer-nav .logo{margin-top:55px;top:0px}}@media all and (max-width: 640px){.footer-nav .logo__anchor{background-image:url("/infinity/resources/images/footer/sp/logo.png?1535334381");background-repeat:no-repeat;background-size:139.5px auto;text-indent:-119988px;overflow:hidden;text-align:left;text-transform:capitalize;background-position:50% 50%;height:56.5px;width:139.5px;display:block;margin:auto}}.footer-nav .sns{display:-webkit-box;display:-ms-flexbox;display:flex;right:0;top:60px}@media all and (max-width: 640px){.footer-nav .sns{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:22px;top:0px}}.footer-nav .sns>*+*{margin-left:16px}@media all and (max-width: 640px){.footer-nav .sns>*+*{margin-left:12px}}.footer-nav .sns a{font-size:22px;font-size:2.2rem;background:#fff;border-radius:50%;color:#272727;display:block;line-height:22px;position:relative;text-align:center;height:50px;width:50px}@media all and (max-width: 640px){.footer-nav .sns a{font-size:18px;font-size:1.8rem;height:38px;width:38px}}.footer-nav .sns a i{position:absolute;margin:auto;top:0;right:0;bottom:0;left:0;height:22px}.footer-nav .sns a .fab.fa-line{font-size:35px;font-size:3.5rem;color:#fff;height:35px}@media all and (max-width: 640px){.footer-nav .sns a .fab.fa-line{font-size:30px;font-size:3rem;height:30px}}.footer-nav .sns a .fas.fa-circle{font-size:25px;font-size:2.5rem;color:#272727}.footer-nav .contents{top:169px;letter-spacing:1px}@media all and (max-width: 640px){.footer-nav .contents{border-top:1px solid #464545;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:30px auto 0;min-height:150px;top:0;width:calc(100% - 20px)}}.footer-nav .contents__item{display:inline-block;position:absolute}@media all and (max-width: 640px){.footer-nav .contents__item{border-bottom:1px solid #464545;-webkit-box-sizing:border-box;box-sizing:border-box;position:relative}}.footer-nav .contents__item>span,.footer-nav .contents__item>a{font-size:16px;font-size:1.6rem;color:#fff;cursor:pointer}.footer-nav .contents__item>span:hover,.footer-nav .contents__item>a:hover{text-decoration:underline}@media all and (max-width: 640px){.footer-nav .contents__item>span,.footer-nav .contents__item>a{font-size:12px;font-size:1.2rem;font-size:3.5vw;display:block;height:50px;line-height:50px;padding-left:14px}}.footer-nav .contents__item>span:hover{text-decoration:none}.footer-nav .contents__item i{margin-right:10px}.footer-nav .contents__item.onlineshop{width:181px}@media all and (max-width: 640px){.footer-nav .contents__item.onlineshop{border-right:1px solid #464545;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;width:50%}}.footer-nav .contents__item.counseling{top:50px;width:181px}@media all and (max-width: 640px){.footer-nav .contents__item.counseling{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;top:auto;width:50%}}.footer-nav .contents__item.cm{top:100px;width:181px}@media all and (max-width: 640px){.footer-nav .contents__item.cm{border-right:1px solid #464545;-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3;top:auto;width:50%}}.footer-nav .contents__item.newitem{top:150px;width:181px}@media all and (max-width: 640px){.footer-nav .contents__item.newitem{border-right:1px solid #464545;-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5;top:auto;width:50%}}.footer-nav .contents__item.product{left:221px;width:544px}.footer-nav .contents__item.product span{cursor:auto}@media all and (max-width: 640px){.footer-nav .contents__item.product{border-right:1px solid #464545;left:auto;-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7;position:relative;width:50%}.m-spfooterproduct-close .footer-nav .contents__item.product .subcontents{display:none}.m-spfooterproduct-open .footer-nav .contents__item.product .subcontents{display:block}}.footer-nav .contents__item.story{top:200px;width:181px}@media all and (max-width: 640px){.footer-nav .contents__item.story{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4;top:auto;width:50%}}.footer-nav .contents__item.special{left:763px;width:129px}@media all and (max-width: 640px){.footer-nav .contents__item.special{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6;left:auto;width:50%}}.footer-nav .contents__item.experience{left:763px;top:50px;width:129px}@media all and (max-width: 640px){.footer-nav .contents__item.experience{border-right:1px solid #464545;left:auto;-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9;top:auto;width:50%}}.footer-nav .contents__item.shop{left:763px;top:100px;width:330px}.footer-nav .contents__item.shop span{cursor:auto}@media all and (max-width: 640px){.footer-nav .contents__item.shop{left:auto;-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8;position:relative;top:auto;width:50%}.footer-nav .contents__item.shop .subcontents{margin-left:-100%}.m-spfootershop-close .footer-nav .contents__item.shop .subcontents{display:none}.m-spfootershop-open .footer-nav .contents__item.shop .subcontents{display:block}.footer-nav .contents__item.shop .subcontents .subcontents__item__anchor{display:inline-block;line-height:1.5;padding-left:1em;text-indent:-1em}}@media all and (max-width: 640px){.footer-nav .subcontents{display:none;background:#282727;width:calc(100vw - 20px);position:relative;z-index:1}}@media all and (max-width: 640px){.footer-nav .subcontents__close{font-size:15px;font-size:1.5rem;background-color:#3e3d3d;color:#fff;cursor:pointer;height:45px;position:absolute;line-height:45px;right:0;text-align:center;top:-45px;width:69px}.footer-nav .subcontents__close::before{background-image:url("/infinity/resources/images/chevron-w11-left.png?1535269534");background-repeat:no-repeat;background-size:5.5px auto;text-indent:-119988px;overflow:hidden;text-align:left;text-transform:capitalize;background-position:50% 50%;height:11.5px;content:' ';display:inline-block;margin-right:5px;vertical-align:middle}}.footer-nav .subcontents__item{position:absolute;top:45px}@media all and (max-width: 640px){.footer-nav .subcontents__item{border-top:1px solid #464545;padding:15px 30px;position:relative;top:0}}.footer-nav .subcontents__item__anchor::before{content:'['}@media all and (max-width: 640px){.footer-nav .subcontents__item__anchor::before{background-image:url("/infinity/resources/images/footer/sp/footer__listmark.png?1535343015");background-repeat:no-repeat;background-size:15.5px auto;text-indent:-119988px;overflow:hidden;text-align:left;text-transform:capitalize;background-position:50% 50%;height:1px;width:15.5px;content:'から探す';display:inline-block;vertical-align:middle}}.footer-nav .subcontents__item__anchor::after{content:']'}@media all and (max-width: 640px){.footer-nav .subcontents__item__anchor::after{content:'から探す'}}.footer-nav .subcontents__item.category{left:15px}@media all and (max-width: 640px){.footer-nav .subcontents__item.category{left:0}}.footer-nav .subcontents__item.series{left:220px}@media all and (max-width: 640px){.footer-nav .subcontents__item.series{left:0}}.footer-nav .subcontents__item.shop-inf a,.footer-nav .subcontents__item.shop-prs a,.footer-nav .subcontents__item.shop-imc a,.footer-nav .subcontents__item.shop-ctr a{font-size:12px;font-size:1.2rem}.footer-nav .subcontents__item.shop-inf a::before,.footer-nav .subcontents__item.shop-inf a::after,.footer-nav .subcontents__item.shop-prs a::before,.footer-nav .subcontents__item.shop-prs a::after,.footer-nav .subcontents__item.shop-imc a::before,.footer-nav .subcontents__item.shop-imc a::after,.footer-nav .subcontents__item.shop-ctr a::before,.footer-nav .subcontents__item.shop-ctr a::after{content:none}.footer-nav .subcontents__item.shop-inf{left:17px;top:45px}@media all and (max-width: 640px){.footer-nav .subcontents__item.shop-inf{left:0;top:0}}.footer-nav .subcontents__item.shop-prs{left:17px;top:80px}@media all and (max-width: 640px){.footer-nav .subcontents__item.shop-prs{left:0;top:0}}.footer-nav .subcontents__item.shop-imc{left:17px;top:115px}@media all and (max-width: 640px){.footer-nav .subcontents__item.shop-imc{left:0;top:0}}.footer-nav .subcontents__item.shop-ctr{left:17px;top:150px}@media all and (max-width: 640px){.footer-nav .subcontents__item.shop-ctr{left:0;top:0}}.footer-nav .subcontents__item a{font-size:14px;font-size:1.4rem;color:#ababab}.footer-nav .subcontents__item a:hover{text-decoration:underline}@media all and (max-width: 640px){.footer-nav .subcontents__item a{font-size:15px;font-size:1.5rem;color:#fff}}@media all and (max-width: 640px){.footer-nav .subcontents__item .icon-shevron-w5-gray::after{background-image:url("/infinity/resources/images/footer/sp/footer__chevron-w7-gray.png?1535342002");background-repeat:no-repeat;background-size:3.5px auto;text-indent:-119988px;overflow:hidden;text-align:left;text-transform:capitalize;background-position:50% 50%;height:6.5px;width:3.5px}}@media all and (max-width: 640px){.footer-nav .subcontents__item ul{margin-left:15px}}.footer-nav .subcontents__item ul li{margin-top:18px}@media all and (max-width: 640px){.footer-nav .subcontents__item ul a{font-size:12px;font-size:1.2rem;color:#fff}}.footer-nav .pagetop{bottom:0;cursor:pointer;right:0;font-size:0}@media all and (max-width: 640px){.footer-nav .pagetop{background-image:url("/infinity/resources/images/footer/sp/pagetop.png?1535334166");background-repeat:no-repeat;background-size:66px auto;text-indent:-119988px;overflow:hidden;text-align:left;text-transform:capitalize;background-position:50% 50%;height:58px;width:66px;margin:50px auto 0}}.footer-nav .icon-shevron-w5::after{content:'';display:inline-block;text-indent:-119988px;overflow:hidden;text-align:left;text-transform:capitalize;background-image:url("/infinity/resources/images/chevron-w5.png?1535109766");background-repeat:no-repeat;background-position:50% 50%;width:5px;height:9px}@media screen and (max-width: 640px){.footer-nav .icon-shevron-w5::after{background-image:url("/infinity/resources/images/chevron-w11.png?1535259590");background-repeat:no-repeat;background-size:5.5px auto;text-indent:-119988px;overflow:hidden;text-align:left;text-transform:capitalize;background-position:50% 50%;height:11.5px;width:5.5px}}.footer-nav .icon-shevron-w5-gray::after{content:'';display:inline-block;text-indent:-119988px;overflow:hidden;text-align:left;text-transform:capitalize;background-image:url("/infinity/resources/images/chevron-w5-gray.png?1535109799");background-repeat:no-repeat;background-position:50% 50%;width:5px;height:9px}@media screen and (max-width: 640px){.footer-nav .subcontents__item .icon-shevron-w5-gray::after{background-image:url("/infinity/resources/images/footer/sp/footer__chevron-w7-gray.png?1535342002");background-repeat:no-repeat;background-size:3.5px auto;text-indent:-119988px;overflow:hidden;text-align:left;text-transform:capitalize;background-position:50% 50%;height:6.5px;width:3.5px}}@media screen and (max-width: 640px){.footer-nav .subcontents__close{font-size:15px;font-size:1.5rem;background-color:#3e3d3d;color:#fff;cursor:pointer;height:45px;position:absolute;line-height:45px;right:0;text-align:center;top:-45px;width:69px}.footer-nav .subcontents__close::before{background-image:url("/infinity/resources/images/chevron-w11-left.png?1535269534");background-repeat:no-repeat;background-size:5.5px auto;text-indent:-119988px;overflow:hidden;text-align:left;text-transform:capitalize;background-position:50% 50%;height:11.5px;width:5.5px;content:' ';display:inline-block;margin-right:5px;vertical-align:middle}}.kose_copyright{text-align:center;padding-bottom:56px;letter-spacing:1px}@media all and (max-width: 640px){.kose_copyright{padding-bottom:20px}.kose_copyright .content_width ul{font-size:10px}}.kose_copyright .clubkose{margin-top:31px}.kose_copyright .clubkose__anchor img{width:237px}@media all and (max-width: 640px){.kose_copyright .clubkose__anchor img{width:259px}}.kose_copyright ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:29px;font-size:14px;font-size:1.4rem}@media all and (max-width: 640px){.kose_copyright ul{display:block;margin:15px auto 0;width:280px}}.kose_copyright ul>*+*{border-left:1px solid #000;margin-left:23px;padding-left:23px}@media all and (max-width: 640px){.kose_copyright ul>*+*{margin-left:13px;padding-left:13px}}@media all and (max-width: 640px){.kose_copyright ul li{display:inline-block;margin-top:1em}.kose_copyright ul li:nth-child(3){border-left:none;margin-left:0;padding-left:0}}.kose_copyright ul li a{font-size:14px;font-size:1.4rem;color:#000}@media all and (max-width: 640px){.kose_copyright ul li a{font-size:11px;font-size:1.1rem}}.kose_copyright .copyright{font-size:10px;font-size:1rem;margin-top:29px;color:#333}@media all and (max-width: 640px){.kose_copyright .copyright{font-size:9px;font-size:.9rem;border-top:1px solid #e3e3e3;margin-top:40px;padding-top:15px;line-height:10px}}
+@charset "UTF-8";
+/* CSS に反映される */
+/* キーフレームアニメーション */
+.content_width {
+  margin: 0 auto;
+}
+
+.global-footer {
+  background-color: #fff;
+  min-width: 1180px;
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'MS PGothic', 'MS UI Gothic', Helvetica, Arial, sans-serif;
+}
+
+@media all and (max-width: 640px) {
+  .global-footer {
+    min-width: 0;
+  }
+}
+
+.footer-nav {
+  overflow: hidden;
+  *zoom: 1;
+  display: block;
+  background-color: #282727;
+  /* /logo */
+  /* /sns */
+  /* /contents */
+  /* /subcontents */
+}
+
+.footer-nav .content_width {
+  height: 488px;
+  position: relative;
+  width: 1130px;
+  line-height: 1;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .content_width {
+    height: auto;
+    width: auto;
+  }
+}
+
+.footer-nav .logo,
+.footer-nav .contents,
+.footer-nav .sns,
+.footer-nav .pagetop {
+  position: absolute;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .logo,
+  .footer-nav .contents,
+  .footer-nav .sns,
+  .footer-nav .pagetop {
+    position: relative;
+  }
+}
+
+.footer-nav .logo {
+  top: 63px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .logo {
+    margin-top: 55px;
+    top: 0px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .logo__anchor {
+    background-image: url("/infinity/resources/images/footer/sp/logo.png?1535334381");
+    background-repeat: no-repeat;
+    background-size: 139.5px auto;
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    text-transform: capitalize;
+    background-position: 50% 50%;
+    height: 56.5px;
+    width: 139.5px;
+    display: block;
+    margin: auto;
+  }
+}
+
+.footer-nav .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  top: 60px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .sns {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 22px;
+    top: 0px;
+  }
+}
+
+.footer-nav .sns > * + * {
+  margin-left: 16px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .sns > * + * {
+    margin-left: 12px;
+  }
+}
+
+.footer-nav .sns a {
+  font-size: 22px;
+  font-size: 2.2rem;
+  background: #fff;
+  border-radius: 50%;
+  color: #272727;
+  display: block;
+  line-height: 22px;
+  position: relative;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .sns a {
+    font-size: 18px;
+    font-size: 1.8rem;
+    height: 38px;
+    width: 38px;
+  }
+}
+
+.footer-nav .sns a i {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 22px;
+}
+
+.footer-nav .sns a .fab.fa-line {
+  font-size: 35px;
+  font-size: 3.5rem;
+  color: #fff;
+  height: 35px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .sns a .fab.fa-line {
+    font-size: 30px;
+    font-size: 3rem;
+    height: 30px;
+  }
+}
+
+.footer-nav .sns a .fas.fa-circle {
+  font-size: 25px;
+  font-size: 2.5rem;
+  color: #272727;
+}
+
+.footer-nav .contents {
+  top: 169px;
+  letter-spacing: 1px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .contents {
+    border-top: 1px solid #464545;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+    min-height: 150px;
+    top: 0;
+    width: calc(100% - 20px);
+  }
+}
+
+.footer-nav .contents__item {
+  display: inline-block;
+  position: absolute;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .contents__item {
+    border-bottom: 1px solid #464545;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+
+.footer-nav .contents__item > span,
+.footer-nav .contents__item > a {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-nav .contents__item > span:hover,
+.footer-nav .contents__item > a:hover {
+  text-decoration: underline;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .contents__item > span,
+  .footer-nav .contents__item > a {
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-size: 3.5vw;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 14px;
+  }
+}
+
+.footer-nav .contents__item > span:hover {
+  text-decoration: none;
+}
+
+.footer-nav .contents__item i {
+  margin-right: 10px;
+}
+
+.footer-nav .contents__item.onlineshop {
+  width: 181px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .contents__item.onlineshop {
+    border-right: 1px solid #464545;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 50%;
+  }
+}
+
+.footer-nav .contents__item.counseling {
+  top: 50px;
+  width: 181px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .contents__item.counseling {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    top: auto;
+    width: 50%;
+  }
+}
+
+.footer-nav .contents__item.cm {
+  top: 100px;
+  width: 181px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .contents__item.cm {
+    border-right: 1px solid #464545;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    top: auto;
+    width: 50%;
+  }
+}
+
+.footer-nav .contents__item.newitem {
+  top: 150px;
+  width: 181px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .contents__item.newitem {
+    border-right: 1px solid #464545;
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    top: auto;
+    width: 50%;
+  }
+}
+
+.footer-nav .contents__item.product {
+  left: 221px;
+  width: 544px;
+}
+
+.footer-nav .contents__item.product span {
+  cursor: auto;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .contents__item.product {
+    border-right: 1px solid #464545;
+    left: auto;
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 7;
+    order: 7;
+    position: relative;
+    width: 50%;
+  }
+  .m-spfooterproduct-close .footer-nav .contents__item.product .subcontents {
+    display: none;
+  }
+  .m-spfooterproduct-open .footer-nav .contents__item.product .subcontents {
+    display: block;
+  }
+}
+
+.footer-nav .contents__item.story {
+  top: 200px;
+  width: 181px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .contents__item.story {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+    top: auto;
+    width: 50%;
+  }
+}
+
+.footer-nav .contents__item.special {
+  left: 763px;
+  width: 129px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .contents__item.special {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 6;
+    order: 6;
+    left: auto;
+    width: 50%;
+  }
+}
+
+.footer-nav .contents__item.experience {
+  left: 763px;
+  top: 50px;
+  width: 129px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .contents__item.experience {
+    border-right: 1px solid #464545;
+    left: auto;
+    -webkit-box-ordinal-group: 10;
+    -ms-flex-order: 9;
+    order: 9;
+    top: auto;
+    width: 50%;
+  }
+}
+
+.footer-nav .contents__item.shop {
+  left: 763px;
+  top: 100px;
+  width: 330px;
+}
+
+.footer-nav .contents__item.shop span {
+  cursor: auto;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .contents__item.shop {
+    left: auto;
+    -webkit-box-ordinal-group: 9;
+    -ms-flex-order: 8;
+    order: 8;
+    position: relative;
+    top: auto;
+    width: 50%;
+  }
+  .footer-nav .contents__item.shop .subcontents {
+    margin-left: -100%;
+  }
+  .m-spfootershop-close .footer-nav .contents__item.shop .subcontents {
+    display: none;
+  }
+  .m-spfootershop-open .footer-nav .contents__item.shop .subcontents {
+    display: block;
+  }
+  .footer-nav .contents__item.shop .subcontents .subcontents__item__anchor {
+    display: inline-block;
+    line-height: 1.5;
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents {
+    display: none;
+    background: #282727;
+    width: calc(100vw - 20px);
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__close {
+    font-size: 15px;
+    font-size: 1.5rem;
+    background-color: #3e3d3d;
+    color: #fff;
+    cursor: pointer;
+    height: 45px;
+    position: absolute;
+    line-height: 45px;
+    right: 0;
+    text-align: center;
+    top: -45px;
+    width: 69px;
+  }
+  .footer-nav .subcontents__close::before {
+    background-image: url("/infinity/resources/images/chevron-w11-left.png?1535269534");
+    background-repeat: no-repeat;
+    background-size: 5.5px auto;
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    text-transform: capitalize;
+    background-position: 50% 50%;
+    height: 11.5px;
+    content: ' ';
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+
+.footer-nav .subcontents__item {
+  position: absolute;
+  top: 45px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item {
+    border-top: 1px solid #464545;
+    padding: 15px 30px;
+    position: relative;
+    top: 0;
+  }
+}
+
+.footer-nav .subcontents__item__anchor::before {
+  content: '[';
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item__anchor::before {
+    background-image: url("/infinity/resources/images/footer/sp/footer__listmark.png?1535343015");
+    background-repeat: no-repeat;
+    background-size: 15.5px auto;
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    text-transform: capitalize;
+    background-position: 50% 50%;
+    height: 1px;
+    width: 15.5px;
+    content: 'から探す';
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.footer-nav .subcontents__item__anchor::after {
+  content: ']';
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item__anchor::after {
+    content: 'から探す';
+  }
+}
+
+.footer-nav .subcontents__item.category {
+  left: 15px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item.category {
+    left: 0;
+  }
+}
+
+.footer-nav .subcontents__item.series {
+  left: 220px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item.series {
+    left: 0;
+  }
+}
+
+.footer-nav .subcontents__item.shop-inf a,
+.footer-nav .subcontents__item.shop-prs a,
+.footer-nav .subcontents__item.shop-imc a,
+.footer-nav .subcontents__item.shop-ctr a {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.footer-nav .subcontents__item.shop-inf a::before, .footer-nav .subcontents__item.shop-inf a::after,
+.footer-nav .subcontents__item.shop-prs a::before,
+.footer-nav .subcontents__item.shop-prs a::after,
+.footer-nav .subcontents__item.shop-imc a::before,
+.footer-nav .subcontents__item.shop-imc a::after,
+.footer-nav .subcontents__item.shop-ctr a::before,
+.footer-nav .subcontents__item.shop-ctr a::after {
+  content: none;
+}
+
+.footer-nav .subcontents__item.shop-inf {
+  left: 17px;
+  top: 45px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item.shop-inf {
+    left: 0;
+    top: 0;
+  }
+}
+
+.footer-nav .subcontents__item.shop-prs {
+  left: 17px;
+  top: 80px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item.shop-prs {
+    left: 0;
+    top: 0;
+  }
+}
+
+.footer-nav .subcontents__item.shop-imc {
+  left: 17px;
+  top: 115px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item.shop-imc {
+    left: 0;
+    top: 0;
+  }
+}
+
+.footer-nav .subcontents__item.shop-ctr {
+  left: 17px;
+  top: 150px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item.shop-ctr {
+    left: 0;
+    top: 0;
+  }
+}
+
+.footer-nav .subcontents__item a {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #ababab;
+}
+
+.footer-nav .subcontents__item a:hover {
+  text-decoration: underline;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item a {
+    font-size: 15px;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item .icon-shevron-w5-gray::after {
+    background-image: url("/infinity/resources/images/footer/sp/footer__chevron-w7-gray.png?1535342002");
+    background-repeat: no-repeat;
+    background-size: 3.5px auto;
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    text-transform: capitalize;
+    background-position: 50% 50%;
+    height: 6.5px;
+    width: 3.5px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item ul {
+    margin-left: 15px;
+  }
+}
+
+.footer-nav .subcontents__item ul li {
+  margin-top: 18px;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .subcontents__item ul a {
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+}
+
+.footer-nav .pagetop {
+  bottom: 0;
+  cursor: pointer;
+  right: 0;
+  font-size: 0;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav .pagetop {
+    background-image: url("/infinity/resources/images/footer/sp/pagetop.png?1535334166");
+    background-repeat: no-repeat;
+    background-size: 66px auto;
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    text-transform: capitalize;
+    background-position: 50% 50%;
+    height: 58px;
+    width: 66px;
+    margin: 50px auto 0;
+  }
+}
+
+.footer-nav .icon-shevron-w5::after {
+  content: '';
+  display: inline-block;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url("/infinity/resources/images/chevron-w5.png?1535109766");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 5px;
+  height: 9px;
+}
+
+@media screen and (max-width: 640px) {
+  .footer-nav .icon-shevron-w5::after {
+    background-image: url("/infinity/resources/images/chevron-w11.png?1535259590");
+    background-repeat: no-repeat;
+    background-size: 5.5px auto;
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    text-transform: capitalize;
+    background-position: 50% 50%;
+    height: 11.5px;
+    width: 5.5px;
+  }
+}
+
+.footer-nav .icon-shevron-w5-gray::after {
+  content: '';
+  display: inline-block;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url("/infinity/resources/images/chevron-w5-gray.png?1535109799");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 5px;
+  height: 9px;
+}
+
+@media screen and (max-width: 640px) {
+  .footer-nav .subcontents__item .icon-shevron-w5-gray::after {
+    background-image: url("/infinity/resources/images/footer/sp/footer__chevron-w7-gray.png?1535342002");
+    background-repeat: no-repeat;
+    background-size: 3.5px auto;
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    text-transform: capitalize;
+    background-position: 50% 50%;
+    height: 6.5px;
+    width: 3.5px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer-nav .subcontents__close {
+    font-size: 15px;
+    font-size: 1.5rem;
+    background-color: #3e3d3d;
+    color: #fff;
+    cursor: pointer;
+    height: 45px;
+    position: absolute;
+    line-height: 45px;
+    right: 0;
+    text-align: center;
+    top: -45px;
+    width: 69px;
+  }
+  .footer-nav .subcontents__close::before {
+    background-image: url("/infinity/resources/images/chevron-w11-left.png?1535269534");
+    background-repeat: no-repeat;
+    background-size: 5.5px auto;
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    text-transform: capitalize;
+    background-position: 50% 50%;
+    height: 11.5px;
+    width: 5.5px;
+    content: ' ';
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+
+/* /footer-nav */
+.kose_copyright {
+  text-align: center;
+  padding-bottom: 56px;
+  letter-spacing: 1px;
+}
+
+@media all and (max-width: 640px) {
+  .kose_copyright {
+    padding-bottom: 20px;
+  }
+  .kose_copyright .content_width ul {
+    font-size: 10px;
+  }
+}
+
+.kose_copyright .clubkose {
+  margin-top: 31px;
+}
+
+.kose_copyright .clubkose__anchor img {
+  width: 237px;
+}
+
+@media all and (max-width: 640px) {
+  .kose_copyright .clubkose__anchor img {
+    width: 259px;
+  }
+}
+
+.kose_copyright ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 29px;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+@media all and (max-width: 640px) {
+  .kose_copyright ul {
+    display: block;
+    margin: 15px auto 0;
+    width: 280px;
+  }
+}
+
+.kose_copyright ul > * + * {
+  border-left: 1px solid #000;
+  margin-left: 23px;
+  padding-left: 23px;
+}
+
+@media all and (max-width: 640px) {
+  .kose_copyright ul > * + * {
+    margin-left: 13px;
+    padding-left: 13px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .kose_copyright ul li {
+    display: inline-block;
+    margin-top: 1em;
+  }
+  .kose_copyright ul li:nth-child(3) {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+.kose_copyright ul li a {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+@media all and (max-width: 640px) {
+  .kose_copyright ul li a {
+    font-size: 11px;
+    font-size: 1.1rem;
+  }
+}
+
+.kose_copyright .copyright {
+  font-size: 10px;
+  font-size: 1rem;
+  margin-top: 29px;
+  color: #333;
+}
+
+@media all and (max-width: 640px) {
+  .kose_copyright .copyright {
+    font-size: 9px;
+    font-size: 0.9rem;
+    border-top: 1px solid #e3e3e3;
+    margin-top: 40px;
+    padding-top: 15px;
+    line-height: 10px;
+  }
+}
+
+/*# sourceMappingURL=fotter_old.css.map */

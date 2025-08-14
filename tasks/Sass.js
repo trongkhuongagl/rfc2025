@@ -6,21 +6,24 @@ const sourcemaps = require('gulp-sourcemaps');
 const wait = require('gulp-wait');
 sass.compiler = require('node-sass');
 
-class Sass extends UndertakerRegistry{
+class Sass extends UndertakerRegistry {
 	init() {
 		gulp.task('sass', () => {
 			return gulp
 				.src('./_dev/_sass/**/*.scss')
 				.pipe(wait(500))
-				.pipe(sourcemaps.init())
-				.pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
+				.pipe(sourcemaps.init()) // Start generating sourcemap
+				.pipe(
+					sass.sync({ outputStyle: 'expanded' }) // expanded for easier reading when dev
+						.on('error', sass.logError)
+				)
 				.pipe(
 					autoprefixer({
 						browsers: ['last 2 versions', 'iOS >= 10', 'Android >= 4.4'],
 						cascade: false,
-					}),
+					})
 				)
-				// .pipe(sourcemaps.write('.'))
+				.pipe(sourcemaps.write('.')) // Write .map file next to CSS file
 				.pipe(gulp.dest('./htdocs/infinity/resources/css'));
 		});
 	}
