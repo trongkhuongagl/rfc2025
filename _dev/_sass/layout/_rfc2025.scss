@@ -65,20 +65,34 @@ $contentsSpW: 560;
   }
 }
 
+// Common
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+.w-cover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.f-palt {
+	font-feature-settings: "palt";
+}
+
 .cat-rfc2025 {
 	sup{
 		font-size: 0.5em;
 		vertical-align: top;
 	}
 	.loop_wrap {
-		// display: flex;
 		width: 100%;
-		// height: 100vh;
-		// height: 100dvh;
 		height: pxToVw(408,1440);
 		font-size: 0;
 		overflow: hidden;
-		background-image: url('/infinity/resources/images/rfc2024/mv.jpg');
+		background-image: url('/infinity/resources/images/rfc2025/mv.jpg');
 		background-repeat: repeat-x;
 		background-size: auto 100%;
 		animation: 'bgslider2024' 280s linear infinite;
@@ -277,14 +291,11 @@ $contentsSpW: 560;
 
 	.mv {
 		position: relative;
-		// position: fixed;
 		width: 100%;
-		// min-width: 1360px;
-		// height: 100vh;
-		// z-index: -1;
 		z-index: 1000;
 		@include mediaQuery(sp) {
 			min-width: auto;
+			z-index: 0;
 		}
 		&.hide {
 			display: none;
@@ -302,7 +313,6 @@ $contentsSpW: 560;
 		li {
 			position: absolute;
 			width: 50%;
-			// min-width: 680px;
 			height: 100%;
 			top: 0;
 			opacity: 0;
@@ -311,7 +321,6 @@ $contentsSpW: 560;
 			&:nth-child(2) {
 				opacity: 1;
 			}
-			// transition: opacity 0.5s;
 			@include mediaQuery(sp) {
 				width: 100%;
 				min-width: auto;
@@ -330,11 +339,9 @@ $contentsSpW: 560;
 				}
 			}
 			&.current {
-				// opacity: 1;
 				z-index: 5;
 			}
 			&.next {
-				// opacity: 1;
 				z-index: 10;
 			}
 
@@ -344,7 +351,6 @@ $contentsSpW: 560;
 				font-size: 0;
 				line-height: 0;
 				width: 100%;
-				// min-width: 680px;
 				height: 100%;
 				@include mediaQuery(sp) {
 					width: 100vw;
@@ -370,24 +376,10 @@ $contentsSpW: 560;
 
 	.mv-box {
 		position: relative;
-		// @include aspect(2880, 1460);
 		width: 100%;
-		// min-width: 1360px;
-		// height: calc(100vh - 80px);
-		// background-image: url('/infinity/resources/images/rfc2023/kv_ph.jpg');
-		// background-repeat: no-repeat;
-		// background-size: 100% auto;
 		@include mediaQuery(sp) {
 			min-width: auto;
-			// height: 100vh;
-			// height: calc(100vh - 50px);
-			// min-height: calc(100vh - 50px);
-			// min-height:  calc(100dvh - 50px);
 			height: auto;
-			// @include aspect(640, 890);
-			// background-image: url('/infinity/resources/images/rfc2023/sp/kv_ph.jpg');
-			// background-repeat: no-repeat;
-			// background-size: 100% auto;
 		}
 
 		.page-btn {
@@ -400,10 +392,6 @@ $contentsSpW: 560;
 			align-items: center;
 			margin: 0 auto;
 			box-sizing: border-box;
-			// padding: 10px 0;
-			// @media screen and (min-width: 1440px) {
-			// 	height: pxToVw(30, 1440);
-			// }
 			@include mediaQuery(sp) {
 				width: 100%;
 				height: pxToVw(40);
@@ -436,11 +424,10 @@ $contentsSpW: 560;
 
 	.mv-banner {
 		position: absolute;
-		right: 30px;
-		top: pxToVw(235,1440);
+		right: 0;
+		top: pxToVw(343,1440);
 		z-index: 100;
 		width: 280px;
-		// height: 323px;
 		box-shadow: 0px -1px 30px -9px #333;
 		@media screen and (min-width: 641px) and (max-width: 1200px) {
 			top: 200px;
@@ -449,19 +436,38 @@ $contentsSpW: 560;
 
 	.title {
 		position: relative;
-		width: percent(1050, 1440);
+		width: percent(1018, 1440);
 		margin: 0 auto;
 		@include mediaQuery(sp) {
-			width: percent(548, 640);
-			left: -5vw;
+			width: percent(520, 640);
+			margin-left: pxToVw(39);
+		}
+	}
+
+	.description {
+		max-width: 1018px;
+		width: 100%;
+		margin: 13px auto 187px;
+		@include font-rem(22);
+		font-weight: 500;
+		letter-spacing: -0.045em;
+		line-height: calc(48/22);
+		text-align: center;
+
+		@include mediaQuery(sp) {
+			font-size: pxToVw(24);
+			line-height: calc(49/24);
+			margin-top: pxToVw(114);
+			margin-bottom: pxToVw(126);
 		}
 	}
 
 	.banner {
 		@include mediaQuery(sp) {
 			transition: all 0.3s;
-			margin: pxToVw(10) auto 0;
-			width: percent(500, 640);
+			margin: pxToVw(-2) auto 0;
+			width: percent(480, 640);
+			aspect-ratio: 480 / 220;
 		}
 		&:hover {
 			opacity: 0.7;
@@ -471,7 +477,7 @@ $contentsSpW: 560;
 
 	.sec-wrap {
 		position: relative;
-		color: #000;
+		color: #3e3a39;
 		text-align: center;
 		z-index: 10;
 	}
@@ -479,10 +485,7 @@ $contentsSpW: 560;
 	.card-photo {
 		position: relative;
 		width: 100%;
-		// min-width: 1360px;
-		// height: auto;
 		height: 100vh;
-		// @include aspect(1440, 800);
 		overflow: hidden;
 		z-index: 10;
 		margin-bottom: 150px;
@@ -496,22 +499,11 @@ $contentsSpW: 560;
 	.card-photo__ph {
 		position: absolute;
 		width: 100%;
-		// width: 100vw;
-		// height: 100vh;
 		transform-origin: bottom center;
-		// transform: scale(1.2);
 		bottom: 0;
 		top: 0;
 		left: 0;
 		right: 0;
-		// top: 0;
-		// bottom:0;
-		// left: 0;
-		// img{
-		// 	object-fit:cover;
-		// 	width: auto;
-		// 	height: auto;
-		// }
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(2, 1fr);
@@ -560,7 +552,6 @@ $contentsSpW: 560;
 		z-index: 10;
 		color: #fff;
 		text-align: left;
-		// font-size: pxToVw(20, 1440);
 		@include font-rem(20);
 		line-height: 1.4;
 		text-shadow: 3px 3px 12px #000000;
@@ -574,19 +565,17 @@ $contentsSpW: 560;
 			left: pxToVw(60);
 			bottom: pxToVw(60);
 		}
-
-		// @media screen and (min-width:1440px){
-		// 	left:80px;
-		// 	bottom: 80px;
-		// };
 	}
 
+	// Section About
 	.about {
+		background-color: #d9e3ef;
+
 		.sec-wrap {
 			box-sizing: border-box;
-			padding: 120px 0 0;
+			padding-top: 122px;
 			@include mediaQuery(sp) {
-				padding: pxToVw(170) 0 0;
+				padding-top: pxToVw(113);
 			}
 		}
 
@@ -619,61 +608,36 @@ $contentsSpW: 560;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			max-width: 1200px;
 			width: 100%;
-			max-width: 1018px;
-			margin: 150px auto 100px;
+			margin: 0 auto 119px;
 			@include mediaQuery(sp) {
-				margin: pxToVw(50) auto pxToVw(90);
 				display: block;
 			}
 		}
 
 		.about-product__ph {
-			width: 477px;
+			width: percent(600, 1200);
 			@include mediaQuery(sp) {
-				width: pxToVw(449);
-				margin: pxToVw(20) auto 0;
+				width: pxToVw(560);
+				margin: 0 auto;
 				overflow: hidden;
 			}
 		}
 
 		.about-product__panel {
 			position: relative;
-			width: percent(460, 1018);
+			width: percent(476, 1200);
 			background-color: rgba($color: #fff, $alpha: 0.9);
 			box-shadow: 11.472px 16.383px 50px 0px rgba(210, 213, 220, 0.25);
 			box-sizing: border-box;
-			padding: 50px 0;
+			padding-top: 47px;
+			padding-bottom: 50px;
+			margin-right: 91px;
 			@include mediaQuery(sp) {
 				width: pxToVw(560);
 				padding: 0;
 				margin: 0 auto;
-			}
-			&::after{
-				content: '';
-				display: block;
-				position: absolute;
-				top:0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background-color: rgba($color: #cecece, $alpha: 0.95);
-				box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.2);
-				z-index: 5;
-			}
-		}
-
-		.about-product__note{
-			width: 100%;
-			position: absolute;
-			top:50%;
-			left: 50%;
-			transform: translate(-50%,-50%);
-			@include font-rem(32);
-			line-height: 1.8;
-			z-index: 10;
-			@include mediaQuery(sp) {
-				font-size: pxToVw(38);
 			}
 		}
 
@@ -685,17 +649,18 @@ $contentsSpW: 560;
 			box-sizing: border-box;
 
 			@include mediaQuery(sp) {
-				// width: pxToVw(560);
 				width: 100%;
-				padding: pxToVw(50) pxToVw(35);
+				padding: pxToVw(61) pxToVw(30) pxToVw(51);
 			}
 		}
 
 		.about-product__title {
 			@include font-rem(26);
-			color: #b25b6a;
+			font-weight: 500;
+			color: #202046;
 			text-align: center;
 			line-height: 1.4;
+			letter-spacing: 0.025em;
 			@include mediaQuery(sp) {
 				font-size: pxToVw(32);
 			}
@@ -706,34 +671,53 @@ $contentsSpW: 560;
 
 		.about-product__lead {
 			@include font-rem(16);
+			font-weight: 500;
 			text-align: center;
-			margin: 30px auto 10px;
+			margin: 33px auto 16px;
 			line-height: 1.6;
+			&.is-02 {
+				margin-top: 22px;
+			}
+			&.is-03 {
+				margin-top: 30px;
+			}
 			@include mediaQuery(sp) {
-				margin: pxToVw(45) auto pxToVw(10);
-				font-size: pxToVw(20);
+				margin: pxToVw(32) auto pxToVw(4);
+				font-size: pxToVw(24);
+				&.is-02 {
+					margin-top: pxToVw(29);
+				}
+				&.is-03 {
+					margin-top: pxToVw(21);
+				}
 			}
 		}
 
 		.about-product__text {
 			@include font-rem(16);
+			font-weight: 400;
 			text-align: left;
-			line-height: 1.5;
+			line-height: 1.7;
+			padding-left: 32px;
 
 			&.text-center {
 				text-align: center;
+
+				@include mediaQuery(sp) {
+					padding: 0;
+				}
 			}
 			@include mediaQuery(sp) {
-				font-size: pxToVw(20);
-			}
-			&.en {
-				letter-spacing: 0.05em;
+				font-size: pxToVw(24);
+				padding: 0 pxToVw(25);
 			}
 			&.space {
 				letter-spacing: -0.05em;
 				box-sizing: border-box;
-				// padding-left: 1em;
-				// text-indent: -1em;
+				line-height: 1.45;
+				@include mediaQuery(sp) {
+					font-size: pxToVw(20);
+				}
 				small {
 					display: block;
 					@include font-rem(12);
@@ -767,11 +751,11 @@ $contentsSpW: 560;
 		.about-product__text--note {
 			@include font-rem(14);
 			@include mediaQuery(sp) {
-				font-size: pxToVw(17);
+				font-size: pxToVw(20);
 			}
 		}
 		.about-product__btn {
-			background-color: #000;
+			background-color: #896d34;
 			border-radius: 25px;
 			height: 50px;
 			display: flex;
@@ -1105,7 +1089,6 @@ $contentsSpW: 560;
 	.bg-place {
 		width: 100%;
 		height: pxToVw(405, 1440);
-		// @include aspect(2040, 450);
 		background-image: url('/infinity/resources/images/rfc2024/place_ph.jpg');
 		background-repeat: repeat-x;
 		background-size: auto 100%;
@@ -1113,8 +1096,6 @@ $contentsSpW: 560;
 		@include mediaQuery(sp) {
 			width: pxToVw(5651);
 			height: pxToVw(405);
-			// // @include aspect(640, 300);
-			// background-image: url('/infinity/resources/images/rfc2023/sp/place_ph.jpg');
 			background-repeat: repeat-x;
 			background-size: auto 100%;
 			animation: 'bgslider2022SP' 120s linear infinite;
@@ -1850,17 +1831,13 @@ $contentsSpW: 560;
 
 	.bg {
 		position: relative;
-		// margin-top: calc(100vh - 80px);
 		z-index: 100;
-		background-image: url('/infinity/resources/images/rfc2024/bg.png');
-		background-repeat: no-repeat;
-		background-size: cover;
+		background-image: url('/infinity/resources/images/rfc2025/bg.jpg');
+		background-repeat: repeat-y;
+		background-size: 100% auto;
 		background-position: center top;
 		@include mediaQuery(sp) {
-			// margin-top: calc(100vh - 50px);
-			background-image: url('/infinity/resources/images/rfc2024/sp/bg.png');
-			background-repeat: repeat-y;
-			background-size: 100% auto;
+			background-image: url('/infinity/resources/images/rfc2025/sp/bg.jpg');
 		}
 	}
 
@@ -2099,20 +2076,15 @@ $contentsSpW: 560;
 	}
 
 	.about-report {
-		background-color: #f0c2bb;
 		width: 100%;
-		// display: flex;
-		// justify-content: space-between;
-		overflow: hidden;
 		position: relative;
 		@include mediaQuery(sp) {
 			display: block;
 		}
 	}
 	.about-report__inner {
-		max-width: 1200px;
+		max-width: 1286px;
 		margin: 0 auto;
-		padding: 0 20px;
 		@include mediaQuery(sp) {
 			max-width: 100%;
 			padding: 0;
@@ -2120,7 +2092,8 @@ $contentsSpW: 560;
 	
 	}
 	.about-report__contents {
-		max-width: 560px;
+		max-width: 646px;
+		padding-top: 78px;
 		@include mediaQuery(sp) {
 			max-width: 100%;
 		}
@@ -2129,9 +2102,8 @@ $contentsSpW: 560;
 	.about-report__ph {
 		position: absolute;
 		right: 0;
-		top: 50%;
-		transform: translateY(-50%);
-		width: percent(679, 1440);
+		top: 0;
+		width: percent(686, 1440);
 		img {
 			object-fit: cover;
 			height: inherit;
@@ -2145,20 +2117,16 @@ $contentsSpW: 560;
 	}
 
 	.about-report__block {
-		color: #a23b2b;
 		position: relative;
-		box-sizing: border-box;
-		padding-top: 70px;
-		min-height: 800px;
 		@include mediaQuery(sp) {
-			padding-top: pxToVw(60);
-			min-height: auto;
+			padding-top: pxToVw(30);
 		}
 	}
 
 	.about-report__title {
-		@include font-rem(34);
-		margin-bottom: 35px;
+		@include font-rem(40);
+		color: #202046;
+		margin-bottom: 44px;
 		@include mediaQuery(sp) {
 			font-size: pxToVw(34);
 			margin-bottom: pxToVw(35);
@@ -2167,6 +2135,7 @@ $contentsSpW: 560;
 
 	.about-report__lead {
 		@include font-rem(20);
+		color: #202046;
 		@include mediaQuery(sp) {
 			font-size: pxToVw(20);
 		}
@@ -2177,10 +2146,17 @@ $contentsSpW: 560;
 		margin: 35px auto 30px;
 		display: flex;
 		justify-content: center;
-		padding-bottom: 20px;
-		border-bottom: solid 1px #fff;
-		width: 100%;
-		max-width: 560px;
+		&::after {
+			content: '';
+			width: 100%;
+			height: 1px;
+			background-color: #c1d7f0;
+			position: absolute;
+			left: 50%;
+			bottom: 2px;
+			transform: translateX(-50%);
+			z-index: -1;
+		}
 		@include mediaQuery(sp) {
 			margin: pxToVw(35) auto pxToVw(30);
 			padding-bottom: pxToVw(20);
@@ -2201,9 +2177,9 @@ $contentsSpW: 560;
 			display: inline-block;
 			width: 1px;
 			height: 50px;
-			background-color: #fff;
+			background-color: #315a86;
 			position: absolute;
-			bottom: 0;
+			top: 33px;
 			right: 0;
 			transform: rotate(20deg);
 			@include mediaQuery(sp) {
@@ -2221,30 +2197,39 @@ $contentsSpW: 560;
 	.about-report__dt {
 		@include font-rem(16);
 		line-height: 1;
+		color: #315a86;	
 		@include mediaQuery(sp) {
 			font-size: pxToVw(16);
-			//background-color: rgba($color: #df958b, $alpha: 0.5);
 		}
 	}
 
 	.about-report__dd {
-		text-shadow: 
-        0 0 10px rgba($color: #df958b, $alpha: 0.5),
-        0 0 20px rgba($color: #df958b, $alpha: 0.5),
-        0 0 30px rgba($color: #df958b, $alpha: 0.5),
-        0 0 40px rgba($color: #df958b, $alpha: 0.5),
-        0 0 50px rgba($color: #df958b, $alpha: 0.5);
-		@include font-rem(70);
+		@include font-rem(64);
 		line-height: 1;
+		color: #315a86;
+		margin-top: 5px;
 		@include mediaQuery(sp) {
 			font-size: pxToVw(70);
 		}
 		span {
-			@include font-rem(48);
+			@include font-rem(38);
 			@include mediaQuery(sp) {
 				font-size: pxToVw(48);
 			}
 		}
+	}
+
+	.about-report__label {
+		display: block;
+		width: fit-content;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		padding: 5px 12px;
+		background-color: #000;
+		color: #fff;
+		margin: 10px auto 0;
 	}
 
 	.about-report__text {
@@ -2252,22 +2237,6 @@ $contentsSpW: 560;
 		line-height: 1.6;
 		@include mediaQuery(sp) {
 			font-size: pxToVw(16);
-		}
-	}
-
-	.about-report__flower {
-		width: 233px;
-		position: absolute;
-		bottom: -25%;
-		left: 50%;
-		transform: translate(-50%, 0);
-		@include mediaQuery(sp) {
-			position: relative;
-			left: auto;
-			bottom: auto;
-			margin: pxToVw(70) auto 0;
-			width: pxToVw(240);
-			transform: none;
 		}
 	}
 
