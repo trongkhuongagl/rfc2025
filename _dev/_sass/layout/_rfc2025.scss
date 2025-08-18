@@ -231,7 +231,6 @@ $contentsSpW: 560;
 		&.width-per100 {
 			width: 100%;
 			max-width: 100%;
-			line-height: 1.47;
 		}
 		&:last-of-type {
 			margin-bottom: 0;
@@ -973,6 +972,9 @@ $contentsSpW: 560;
 			}
 			.section-text {
 				letter-spacing: -0.04em;
+				@include mediaQuery(sp) {
+					letter-spacing: 0;
+				}
 			}
 		}
 
@@ -1011,12 +1013,12 @@ $contentsSpW: 560;
 				&::before {
 					position: absolute;
 					content: '';
-					top: 0;
-					right: -10%;
+					top: 4px;
+					right: -13%;
 					width: 14px;
 					height: 14px;
 					background-repeat: no-repeat;
-					background-size: 100% auto;
+					background-size: contain;
 					background-image: url('/infinity/resources/images/rfc2025/icon_link.png');
 					@include mediaQuery(sp) {
 						width: pxToVw(19);
@@ -1514,10 +1516,12 @@ $contentsSpW: 560;
 			.detail-set__title {
 				@include font-rem(22);
 				font-weight: 500;
+				color: #3e3a39;
 				margin-bottom: 14px;
 				text-align: left;
 				@include mediaQuery(sp) {
 					font-size: pxToVw(27);
+					color: #202047;
 					margin: pxToVw(36) auto pxToVw(20);
 				}
 			}
@@ -1696,13 +1700,13 @@ $contentsSpW: 560;
 				}
 			}
 			.num {
-				font-size: 11px;
+				font-size: 12px;
 				line-height: 1;
 				position: relative;
-				top: -5px;
+				top: -4px;
 				@include mediaQuery(sp) {
-					font-size: pxToVw(12);
-					top: pxToVw(-10);
+					font-size: pxToVw(15);
+					top: pxToVw(-8);
 				}
 			}
 			@include mediaQuery(sp) {
@@ -1879,16 +1883,15 @@ $contentsSpW: 560;
 				font-size: 10px;
 				line-height: 1;
 				position: relative;
-				top: -5px;
+				top: -4px;
 			}
 			@include mediaQuery(sp) {
 				padding: pxToVw(10) pxToVw(15);
 				margin-bottom: pxToVw(5);
 				line-height: 2;
 				.num {
-					font-size: pxToVw(11);
-					line-height: 1;
-					top: pxToVw(-10);
+					font-size: pxToVw(12);
+					top: pxToVw(-7);
 				}
 			}
 		}
@@ -2253,12 +2256,13 @@ $contentsSpW: 560;
 	}
 
 	.sec-online__note {
-		color: #000;
-		text-align: center;
 		@include font-rem(14);
-		line-height: 1.4;
+		color: #3e3a39;
+		text-align: center;
+		line-height: calc(32/14);
 		@include mediaQuery(sp) {
 			font-size: pxToVw(20);
+			line-height: 2;
 			text-align: left;
 		}
 	}
@@ -2351,15 +2355,18 @@ $contentsSpW: 560;
 		display: flex;
 		justify-content: center;
 		&::after {
-			display: none;
 			content: '';
-			width: 100%;
+			width: calc(100% - 70px);
 			height: 1px;
 			background-color: #c1d7f0;
 			position: absolute;
 			left: 50%;
-			bottom: 2px;
+			bottom: -17px;
 			transform: translateX(-50%);
+			@include mediaQuery(sp) {
+				width: 100%;
+				bottom: pxToVw(-12);
+			}
 		}
 		@include mediaQuery(sp) {
 			margin: pxToVw(35) auto pxToVw(10);

@@ -973,7 +973,6 @@ a:hover {
 .cat-rfc2025 .section-text.width-per100 {
   width: 100%;
   max-width: 100%;
-  line-height: 1.47;
 }
 
 .cat-rfc2025 .section-text:last-of-type {
@@ -1954,6 +1953,12 @@ a:hover {
   letter-spacing: -0.04em;
 }
 
+@media all and (max-width: 640px) {
+  .cat-rfc2025 .about .about-ethiopia__flex .section-text {
+    letter-spacing: 0;
+  }
+}
+
 .cat-rfc2025 .about .about-ethiopia__col {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -2010,12 +2015,12 @@ a:hover {
 .cat-rfc2025 .about .about-ethiopia__col a::before {
   position: absolute;
   content: '';
-  top: 0;
-  right: -10%;
+  top: 4px;
+  right: -13%;
   width: 14px;
   height: 14px;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: contain;
   background-image: url("/infinity/resources/images/rfc2025/icon_link.png");
 }
 
@@ -2695,6 +2700,7 @@ a:hover {
   font-size: 22px;
   font-size: 2.2rem;
   font-weight: 500;
+  color: #3e3a39;
   margin-bottom: 14px;
   text-align: left;
 }
@@ -2702,6 +2708,7 @@ a:hover {
 @media all and (max-width: 640px) {
   .cat-rfc2025 .detail .detail-set__li .detail-set__title {
     font-size: 4.21875vw;
+    color: #202047;
     margin: 5.625vw auto 3.125vw;
   }
 }
@@ -2933,16 +2940,16 @@ a:hover {
 }
 
 .cat-rfc2025 .detail .detail-col_li .num {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1;
   position: relative;
-  top: -5px;
+  top: -4px;
 }
 
 @media all and (max-width: 640px) {
   .cat-rfc2025 .detail .detail-col_li .num {
-    font-size: 1.875vw;
-    top: -1.5625vw;
+    font-size: 2.34375vw;
+    top: -1.25vw;
   }
 }
 
@@ -3200,7 +3207,7 @@ a:hover {
   font-size: 10px;
   line-height: 1;
   position: relative;
-  top: -5px;
+  top: -4px;
 }
 
 @media all and (max-width: 640px) {
@@ -3210,9 +3217,8 @@ a:hover {
     line-height: 2;
   }
   .cat-rfc2025 .detail .detail-col__dd .num {
-    font-size: 1.71875vw;
-    line-height: 1;
-    top: -1.5625vw;
+    font-size: 1.875vw;
+    top: -1.09375vw;
   }
 }
 
@@ -3682,16 +3688,17 @@ a:hover {
 }
 
 .cat-rfc2025 .sec-online__note {
-  color: #000;
-  text-align: center;
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 1.4;
+  color: #3e3a39;
+  text-align: center;
+  line-height: calc(32/14);
 }
 
 @media all and (max-width: 640px) {
   .cat-rfc2025 .sec-online__note {
     font-size: 3.125vw;
+    line-height: 2;
     text-align: left;
   }
 }
@@ -3812,16 +3819,22 @@ a:hover {
 }
 
 .cat-rfc2025 .about-report__box::after {
-  display: none;
   content: '';
-  width: 100%;
+  width: calc(100% - 70px);
   height: 1px;
   background-color: #c1d7f0;
   position: absolute;
   left: 50%;
-  bottom: 2px;
+  bottom: -17px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+@media all and (max-width: 640px) {
+  .cat-rfc2025 .about-report__box::after {
+    width: 100%;
+    bottom: -1.875vw;
+  }
 }
 
 @media all and (max-width: 640px) {
