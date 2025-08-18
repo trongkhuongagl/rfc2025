@@ -789,7 +789,7 @@ a:hover {
   font-weight: 700;
   line-height: 1;
   text-align: center;
-  padding: 4px 12px 6px;
+  padding: 5px 12px 5px;
   background-color: #000;
   color: #fff;
   margin: 8px auto 0;
@@ -797,7 +797,10 @@ a:hover {
 
 @media all and (max-width: 640px) {
   .c-label {
+    font-size: 1.875vw;
     margin-top: 0.78125vw;
+    padding: 0.78125vw 1.875vw 0.78125vw;
+    margin-top: 1.25vw;
   }
 }
 
@@ -3658,6 +3661,13 @@ a:hover {
 @media all and (max-width: 640px) {
   .cat-rfc2025 .sec-online__ul li:nth-child(1), .cat-rfc2025 .sec-online__ul li:nth-child(3) {
     margin-right: -1px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .cat-rfc2025 .sec-online__ul li:nth-child(3), .cat-rfc2025 .sec-online__ul li:nth-child(4) {
+    margin-top: -1px;
+    margin-bottom: -1px;
   }
 }
 

@@ -86,12 +86,15 @@ $contentsSpW: 560;
 	font-weight: 700;
 	line-height: 1;
 	text-align: center;
-	padding: 4px 12px 6px;
+	padding: 5px 12px 5px;
 	background-color: #000;
 	color: #fff;
 	margin: 8px auto 0;
 	@include mediaQuery(sp) {
+		font-size: pxToVw(12);
 		margin-top: pxToVw(5);
+		padding: pxToVw(5) pxToVw(12) pxToVw(5);
+		margin-top: pxToVw(8);
 	}
 }
 
@@ -2231,6 +2234,13 @@ $contentsSpW: 560;
 			&:nth-child(3) {
 				@include mediaQuery(sp) {
 					margin-right: -1px;
+				}
+			}
+			&:nth-child(3),
+			&:nth-child(4) {
+				@include mediaQuery(sp) {
+					margin-top: -1px;
+					margin-bottom: -1px;
 				}
 			}
 			&:last-child {
