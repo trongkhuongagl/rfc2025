@@ -95,6 +95,7 @@ $contentsSpW: 560;
 	color: #fff;
 	margin: 8px auto 0;
 	@include mediaQuery(sp) {
+		height: pxToVw(22);
 		font-size: pxToVw(12);
 		margin-top: pxToVw(5);
 		padding: 0 pxToVw(12);

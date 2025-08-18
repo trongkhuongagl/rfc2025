@@ -807,6 +807,7 @@ a:hover {
 
 @media all and (max-width: 640px) {
   .c-label {
+    height: 3.4375vw;
     font-size: 1.875vw;
     margin-top: 0.78125vw;
     padding: 0 1.875vw;
