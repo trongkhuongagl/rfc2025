@@ -785,11 +785,21 @@ a:hover {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
   text-align: center;
-  padding: 5px 12px 5px;
+  padding: 0 12px;
   background-color: #000;
   color: #fff;
   margin: 8px auto 0;
@@ -799,7 +809,7 @@ a:hover {
   .c-label {
     font-size: 1.875vw;
     margin-top: 0.78125vw;
-    padding: 0.78125vw 1.875vw 0.78125vw;
+    padding: 0 1.875vw;
     margin-top: 1.25vw;
   }
 }
@@ -1230,14 +1240,19 @@ a:hover {
 
 .cat-rfc2025 .title {
   position: relative;
-  width: 70.69%;
-  margin: 0 auto;
+  max-width: 666px;
+  width: 100%;
+  margin: 0 auto 77px;
+  padding-top: 77px;
+  left: -39px;
 }
 
 @media all and (max-width: 640px) {
   .cat-rfc2025 .title {
-    width: 81.25%;
-    margin-left: 6.09375vw;
+    max-width: 77.96875vw;
+    padding-top: 11.25vw;
+    margin-bottom: 15.15625vw;
+    left: -3.75vw;
   }
 }
 
@@ -1584,7 +1599,6 @@ a:hover {
 }
 
 .cat-rfc2025 .about .about-product__text.space {
-  letter-spacing: -0.05em;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   line-height: 1.45;
@@ -2026,6 +2040,7 @@ a:hover {
 
 @media all and (max-width: 640px) {
   .cat-rfc2025 .about .about-ethiopia__col a::before {
+    background-image: url("/infinity/resources/images/rfc2025/sp/icon_link.png");
     width: 2.96875vw;
     height: 3.28125vw;
     top: 1.25vw;
@@ -2558,6 +2573,7 @@ a:hover {
   color: #202047;
   font-size: 23px;
   font-size: 2.3rem;
+  letter-spacing: 0.12em;
   margin-bottom: 23px;
 }
 
@@ -2590,7 +2606,8 @@ a:hover {
 .cat-rfc2025 .detail .detail-product__li {
   font-size: 18px;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.05em;
   margin-bottom: 15px;
 }
 
@@ -2717,7 +2734,7 @@ a:hover {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.85;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -2914,14 +2931,14 @@ a:hover {
 .cat-rfc2025 .detail .detail-col_li {
   font-size: 16px;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
   line-height: 2;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 0.5em;
-  text-indent: -0.5em;
-  letter-spacing: -0.06em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .cat-rfc2025 .detail .detail-col_li.is-note {
@@ -3166,8 +3183,8 @@ a:hover {
 .cat-rfc2025 .detail .detail-col__dl {
   font-size: 14px;
   font-size: 1.4rem;
+  font-weight: 400;
   text-align: left;
-  white-space: -0.1em;
 }
 
 .cat-rfc2025 .detail .detail-col__dl.mb-1_5em {
@@ -3199,7 +3216,7 @@ a:hover {
 .cat-rfc2025 .detail .detail-col__dd {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 5px 10px;
+  padding: 5px;
   line-height: 1.8;
 }
 
@@ -3212,7 +3229,7 @@ a:hover {
 
 @media all and (max-width: 640px) {
   .cat-rfc2025 .detail .detail-col__dd {
-    padding: 1.5625vw 2.34375vw;
+    padding: 1.5625vw;
     margin-bottom: 0.78125vw;
     line-height: 2;
   }
@@ -3310,7 +3327,7 @@ a:hover {
   max-width: 1000px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 80px;
+  padding: 55px 80px 53px 110px;
   margin: 0 auto;
   background-color: #fff;
   -webkit-box-shadow: 11.472px 16.383px 50px 0px rgba(210, 213, 220, 0.25);
@@ -3340,13 +3357,11 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 45px;
+  gap: 83px;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -3355,71 +3370,63 @@ a:hover {
 @media all and (max-width: 640px) {
   .cat-rfc2025 .oneoflove .oneoflove-block {
     display: block;
-    margin-top: 5.46875vw;
+    margin-top: 6.25vw;
   }
 }
 
 .cat-rfc2025 .oneoflove .oneoflove-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 37.05%;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.cat-rfc2025 .oneoflove .oneoflove-logo img {
-  display: block;
-  max-width: 315px;
+  width: 306px;
+  margin-top: -41px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 @media all and (max-width: 640px) {
   .cat-rfc2025 .oneoflove .oneoflove-logo {
-    display: block;
-    width: 47.96875vw;
-    margin: 0 auto;
+    width: 47.8125vw;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .cat-rfc2025 .oneoflove .oneoflove-col {
-  width: 53.52%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   text-align: left;
 }
 
 @media all and (max-width: 640px) {
   .cat-rfc2025 .oneoflove .oneoflove-col {
     width: 100%;
-    margin-top: 9.375vw;
+    margin-top: 8.4375vw;
+    padding-left: 5.46875vw;
+    padding-right: 5.46875vw;
   }
 }
 
 .cat-rfc2025 .oneoflove .oneoflove-text {
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 1.8;
-  font-weight: 500;
+  line-height: 2;
+  font-weight: 400;
 }
 
 @media all and (max-width: 640px) {
   .cat-rfc2025 .oneoflove .oneoflove-text {
-    font-size: 3.125vw;
+    font-size: 3.75vw;
+    line-height: calc(40/24);
   }
 }
 
 .cat-rfc2025 .bg {
   position: relative;
   z-index: 100;
-  background-image: url("/infinity/resources/images/rfc2025/bg.jpg");
+  background: #202047 url("/infinity/resources/images/rfc2025/bg.jpg");
   background-repeat: repeat-y;
   background-size: 100% auto;
   background-position: center top;
-}
-
-@media all and (max-width: 640px) {
-  .cat-rfc2025 .bg {
-    background-image: url("/infinity/resources/images/rfc2025/sp/bg.jpg");
-  }
 }
 
 .cat-rfc2025 .modal-lineup {
@@ -3591,7 +3598,8 @@ a:hover {
 .cat-rfc2025 .sec-online .detail-set {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 53px;
 }
 
 @media all and (max-width: 640px) {
@@ -3637,7 +3645,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 40px auto 35px;
+  margin: 40px auto 26px;
   width: 100%;
   max-width: 910px;
   border: solid 1px #ebebeb;
@@ -4141,7 +4149,9 @@ a:hover {
 @media screen and (min-width: 641px) and (max-width: 1439px) {
   .cat-rfc2025 .about-ethiopia__label.is-03 {
     position: static;
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     margin: 0;
     -webkit-transform: translateX(-5px) translateY(-3px);
     transform: translateX(-5px) translateY(-3px);
@@ -4151,7 +4161,9 @@ a:hover {
 @media all and (max-width: 640px) {
   .cat-rfc2025 .about-ethiopia__label.is-03 {
     position: static;
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     margin: 0;
     -webkit-transform: translateX(-5px) translateY(-3px);
     transform: translateX(-5px) translateY(-3px);

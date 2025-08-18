@@ -82,18 +82,22 @@ $contentsSpW: 560;
 	font-family: '游ゴシック体', YuGothic, '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック', 'Yu Gothic', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'MS PGothic', 'MS UI Gothic', Helvetica, Arial, sans-serif;
 	display: block;
 	width: fit-content;
+	height: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 12px;
 	font-weight: 700;
 	line-height: 1;
 	text-align: center;
-	padding: 5px 12px 5px;
+	padding: 0 12px;
 	background-color: #000;
 	color: #fff;
 	margin: 8px auto 0;
 	@include mediaQuery(sp) {
 		font-size: pxToVw(12);
 		margin-top: pxToVw(5);
-		padding: pxToVw(5) pxToVw(12) pxToVw(5);
+		padding: 0 pxToVw(12);
 		margin-top: pxToVw(8);
 	}
 }
@@ -444,11 +448,16 @@ $contentsSpW: 560;
 
 	.title {
 		position: relative;
-		width: percent(1018, 1440);
-		margin: 0 auto;
+		max-width: 666px;
+		width: 100%;
+		margin: 0 auto 77px;
+		padding-top: 77px;
+		left: -39px;
 		@include mediaQuery(sp) {
-			width: percent(520, 640);
-			margin-left: pxToVw(39);
+			max-width: pxToVw(499);
+			padding-top: pxToVw(72);
+			margin-bottom: pxToVw(97);
+			left: pxToVw(-24);
 		}
 	}
 
@@ -709,7 +718,6 @@ $contentsSpW: 560;
 				padding: 0 pxToVw(25);
 			}
 			&.space {
-				letter-spacing: -0.05em;
 				box-sizing: border-box;
 				line-height: 1.45;
 				@include mediaQuery(sp) {
@@ -1021,6 +1029,7 @@ $contentsSpW: 560;
 					background-size: contain;
 					background-image: url('/infinity/resources/images/rfc2025/icon_link.png');
 					@include mediaQuery(sp) {
+						background-image: url('/infinity/resources/images/rfc2025/sp/icon_link.png');
 						width: pxToVw(19);
 						height: pxToVw(21);
 						top: pxToVw(8);
@@ -1412,6 +1421,7 @@ $contentsSpW: 560;
 		.detail-product__day {
 			color: #202047;
 			@include font-rem(23);
+			letter-spacing: 0.12em;
 			margin-bottom: 23px;
 			@include mediaQuery(sp) {
 				font-size: pxToVw(22);
@@ -1436,7 +1446,8 @@ $contentsSpW: 560;
 
 		.detail-product__li {
 			@include font-rem(18);
-			font-weight: 500;
+			font-weight: 400;
+			letter-spacing: 0.05em;
 			margin-bottom: 15px;
 			&::before {
 				content: '・';
@@ -1528,7 +1539,7 @@ $contentsSpW: 560;
 			.detail-set__text {
 				@include font-rem(16);
 				line-height: 1.85;
-				font-weight: 500;
+				font-weight: 400;
 				text-align: left;
 				@include mediaQuery(sp) {
 					font-size: pxToVw(24);
@@ -1682,13 +1693,11 @@ $contentsSpW: 560;
 
 		.detail-col_li {
 			@include font-rem(16);
-			font-weight: 500;
+			font-weight: 400;
 			text-align: left;
 			line-height: 2;
 			box-sizing: border-box;
-			padding-left: 0.5em;
-			text-indent: -0.5em;
-			letter-spacing: -0.06em;
+			display: flex;
 			&.is-note {
 				font-size: 12px;
 				text-indent: 0;
@@ -1854,8 +1863,8 @@ $contentsSpW: 560;
 
 		.detail-col__dl {
 			@include font-rem(14);
+			font-weight: 400;
 			text-align: left;
-			white-space: -0.1em;
 			&.mb-1_5em {
 				margin-bottom: 1.5em;
 			}
@@ -1877,7 +1886,7 @@ $contentsSpW: 560;
 		}
 		.detail-col__dd {
 			box-sizing: border-box;
-			padding: 5px 10px;
+			padding: 5px;
 			line-height: 1.8;
 			.num {
 				font-size: 10px;
@@ -1886,7 +1895,7 @@ $contentsSpW: 560;
 				top: -4px;
 			}
 			@include mediaQuery(sp) {
-				padding: pxToVw(10) pxToVw(15);
+				padding: pxToVw(10);
 				margin-bottom: pxToVw(5);
 				line-height: 2;
 				.num {
@@ -1963,7 +1972,7 @@ $contentsSpW: 560;
 			width: 100%;
 			max-width: 1000px;
 			box-sizing: border-box;
-			padding: 80px;
+			padding: 55px 80px 53px 110px;
 			margin: 0 auto;
 			background-color: #fff;
 			box-shadow: 11.472px 16.383px 50px 0px rgba(210, 213, 220, 0.25);
@@ -1983,49 +1992,48 @@ $contentsSpW: 560;
 
 		.oneoflove-block {
 			display: flex;
-			justify-content: space-between;
 			align-items: center;
-			margin-top: 45px;
+			gap: 83px;
+			margin-top: 60px;
 			margin-left: auto;
 			margin-right: auto;
 			width: 100%;
 			@include mediaQuery(sp) {
 				display: block;
-				margin-top: pxToVw(35);
+				margin-top: pxToVw(40);
 			}
 		}
 
 		.oneoflove-logo {
-			display: flex;
-			width: percent(315, 850);
-			justify-content: flex-end;
-			img {
-				display: block;
-				max-width: 315px;
-			}
+			width: 306px;
+			margin-top: -41px;
+			flex-shrink: 0;
 			@include mediaQuery(sp) {
-				display: block;
-				width: pxToVw(307);
-				margin: 0 auto;
+				width: pxToVw(306);
+				margin-top: 0;
+				margin-left: auto;
+				margin-right: auto;
 			}
 		}
 
 		.oneoflove-col {
-			// width: 450px;
-			width: percent(455, 850);
+			flex: 1;
 			text-align: left;
 			@include mediaQuery(sp) {
 				width: 100%;
-				margin-top: pxToVw(60);
+				margin-top: pxToVw(54);
+				padding-left: pxToVw(35);
+        padding-right: pxToVw(35);
 			}
 		}
 
 		.oneoflove-text {
 			@include font-rem(16);
-			line-height: 1.8;
-			font-weight: 500;
+			line-height: 2;
+			font-weight: 400;
 			@include mediaQuery(sp) {
-				font-size: pxToVw(20);
+				font-size: pxToVw(24);
+				line-height: calc(40/24);
 			}
 		}
 	}
@@ -2033,13 +2041,10 @@ $contentsSpW: 560;
 	.bg {
 		position: relative;
 		z-index: 100;
-		background-image: url('/infinity/resources/images/rfc2025/bg.jpg');
+		background:#202047 url('/infinity/resources/images/rfc2025/bg.jpg');
 		background-repeat: repeat-y;
 		background-size: 100% auto;
 		background-position: center top;
-		@include mediaQuery(sp) {
-			background-image: url('/infinity/resources/images/rfc2025/sp/bg.jpg');
-		}
 	}
 
 	.modal-lineup {
@@ -2063,11 +2068,7 @@ $contentsSpW: 560;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		// width: pxToVw(750,1360);
 		z-index: 5;
-		// @include mediaQuery(sp){
-		// 	width: pxToVw(560);
-		// };
 	}
 
 	.modal-g {
@@ -2184,7 +2185,8 @@ $contentsSpW: 560;
 
 		.detail-set {
 			box-sizing: border-box;
-			padding-bottom: 80px;
+			padding-top: 50px;
+			padding-bottom: 53px;
 			@include mediaQuery(sp) {
 				padding: pxToVw(50) pxToVw(40);
 			}
@@ -2217,7 +2219,7 @@ $contentsSpW: 560;
 
 	.sec-online__ul {
 		display: flex;
-		margin: 40px auto 35px;
+		margin: 40px auto 26px;
 		width: 100%;
 		max-width: 910px;
 		border: solid 1px #ebebeb;
@@ -2586,13 +2588,13 @@ $contentsSpW: 560;
 			right: -115px;
 			@media screen and (min-width: 641px) and (max-width: 1439px) {
 				position: static;
-				display: inline-block;
+				display: inline-flex;
 				margin: 0;
 				transform: translateX(-5px) translateY(-3px);
 			}
 			@include mediaQuery(sp) {
 				position: static;
-				display: inline-block;
+				display: inline-flex;
 				margin: 0;
 				transform: translateX(-5px) translateY(-3px);
 			}
