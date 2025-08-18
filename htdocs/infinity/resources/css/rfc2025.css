@@ -2429,6 +2429,7 @@ a:hover {
 
 @media all and (max-width: 640px) {
   .cat-rfc2025 .detail .section-title {
+    max-width: 79.6875vw;
     margin-bottom: 11.09375vw;
     padding-bottom: 2.65625vw;
   }

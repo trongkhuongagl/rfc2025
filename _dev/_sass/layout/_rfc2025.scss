@@ -1315,6 +1315,7 @@ $contentsSpW: 560;
 		.section-title {
 			margin-bottom: 59px;
 			@include mediaQuery(sp) {
+				max-width: pxToVw(510);
 				margin-bottom: pxToVw(71);
     		padding-bottom: pxToVw(17);
 			}
