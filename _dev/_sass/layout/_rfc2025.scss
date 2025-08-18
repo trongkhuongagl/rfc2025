@@ -2292,7 +2292,6 @@ $contentsSpW: 560;
 		position: relative;
 		min-height: 491px;
 		overflow: hidden;
-		padding-bottom: 168px;
 		@include mediaQuery(sp) {
 			display: block;
 			padding-bottom: 0;
@@ -2462,7 +2461,12 @@ $contentsSpW: 560;
 	}
 
 	.about-video {
-		background-color: #fff;
+		background-color: #d9e3ef;
+		padding-top: 168px;
+		@include mediaQuery(sp) {
+			padding-top: 0;
+			background-color: #fff;
+		}
 		&__inner {
 			max-width: 1440px;
 			margin: 0 auto;

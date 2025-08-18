@@ -3734,7 +3734,6 @@ a:hover {
   position: relative;
   min-height: 491px;
   overflow: hidden;
-  padding-bottom: 168px;
 }
 
 @media all and (max-width: 640px) {
@@ -3962,7 +3961,15 @@ a:hover {
 }
 
 .cat-rfc2025 .about-video {
-  background-color: #fff;
+  background-color: #d9e3ef;
+  padding-top: 168px;
+}
+
+@media all and (max-width: 640px) {
+  .cat-rfc2025 .about-video {
+    padding-top: 0;
+    background-color: #fff;
+  }
 }
 
 .cat-rfc2025 .about-video__inner {
